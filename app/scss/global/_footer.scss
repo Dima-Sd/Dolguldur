@@ -1,0 +1,32 @@
+// footer
+.footer {
+    padding: 64px 0 60px;
+    background-color: $footer-bg;
+
+    &__contacts {
+        max-width: 245px;
+        width: 100%;
+    }
+
+    &__logo {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 22px;
+    }
+
+    &__item {
+        font-style: normal;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__location {
+        color: $background;
+    }
+
+    &__link {
+        color: $link;
+    }
+}

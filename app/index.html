@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        DolGuldur
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Roboto&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<header class="header">
+    <div class="container">
+        <div class="header__content">
+            <nav class="menu">
+                <a class="logo" href="#">
+                    <img class="logo__img" width="189" height="36" src="./images/logo-header.svg" alt="logo">
+                </a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Our Works
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="header__contacts">
+                <ul class="header__list">
+                    <li class="header__item"> <!-- Однотипні елементи -->
+                        <a class="header__link header__link--email" href="mailto:info@dolguldur.com">
+                            info@dolguldur.com
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link header__link--phone" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section class="homepage">
+        <div class="container">
+            <div class="homepage__inner">
+                <h1 class="homepage__title">
+                    author's forge where your sites are created
+                </h1>
+                <button class="button" type="button">
+                    Go to order
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="about section"><!-- або просто зробити через div -->
+        <div class="container">
+            <h2 class="visually-hidden">
+                skills
+            </h2>
+            <ul class="about__inner">
+                <li class="about__item">
+                    <h3 class="about__title">
+                        <!-- Тут спірний момент, тому що потрібен справжній контент, бо саме через контент ми дивимся, чи поєднаний по смислу з текстом, чи ні. Або заголовок повинен стисло розповідати користувачу про те, що буде йти в тексті. Але так, як немає заголовку в секції, то і відповідно немає бути подальшого розділення на підтеми, тож робимо обичним текстом    -->
+                        Effective team
+                    </h3>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                    </p>
+                </li>
+                <li class="about__item">
+                    <h3 class="about__title">
+                        punctuality
+                    </h3>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                    </p>
+                </li>
+                <li class="about__item">
+                    <p class="about__title">
+                        planning
+                    </p>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                    </p>
+                </li>
+                <li class="about__item">
+                    <p class="about__title">
+                        innovation
+                    </p>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="services section">
+        <div class="container">
+            <h2 class="title">
+                Our services
+            </h2>
+            <ul class="services__inner">
+                <li class="services__item">
+                    <img class="services__img" width="370" height="294" src="./images/services/service.jpg"
+                        alt="a desktop on which user devices lie">
+                    <h3 class="services__title">
+                        desktop apps
+                    </h3>
+                </li>
+                <li class="services__item">
+                    <img class="services__img" width="370" height="294" src="./images/services/service-2.jpg"
+                        alt="user holding his mobile phone">
+                    <h3 class="services__title">
+                        mobile apps
+                    </h3>
+                </li>
+                <li class="services__item">
+                    <img class="services__img" width="370" height="294" src="./images/services/service-3.jpg"
+                        alt="A hand holds a colored pencil, a box of pencils is next to it">
+                    <h3 class="services__title">
+                        modern design
+                    </h3>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="team section">
+        <div class="container">
+            <h2 class="title">
+                Our team
+            </h2>
+            <ul class="team__inner">
+                <li class="team__item">
+                    <img class="team__img" src="./images/team/team.jpg" width="270" height="260" alt="Paul Castanie">
+                    <div class="team__column">
+                        <h3 class="team__username">
+                            Paul Castanie
+                        </h3>
+                        <p class="team__description">
+                            Product Designer
+                        </p>
+                    </div>
+                </li>
+                <li class="team__item">
+                    <img class="team__img" src="./images/team/team-2.jpg" width="270" height="260" alt="Joanna Nix">
+                    <div class="team__column">
+                        <h3 class="team__username">
+                            Joanna Nix
+                        </h3>
+                        <p class="team__description">
+                            Frontend Developer
+                        </p>
+                    </div>
+                </li>
+                <li class="team__item">
+                    <img class="team__img" src="./images/team/team-3.jpg" width="270" height="260" alt="Aldo Delara">
+                    <div class="team__column">
+                        <h3 class="team__username">
+                            Aldo Delara
+                        </h3>
+                        <p class="team__description">
+                            Marketing
+                        </p>
+                    </div>
+                </li>
+                <li class="team__item">
+                    <img src="./images/team/team-4.jpg" width="270" height="260" alt="Oladimeji Odunsi">
+                    <div class="team__column">
+                        <!-- Я хотів задати відступ не створюючи обгортки, відповідно критерію, але не вийшло -->
+                        <h3 class="team__username">
+                            Oladimeji Odunsi
+                        </h3>
+                        <p class="team__description">
+                            <span class="text-big">ui</span> Designer
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <address class="footer__contacts">
+            <a class="logo footer__logo" href="#">
+                <img class="logo__img" width="140" height="25" src="./images/logo-footer.svg" alt="logo">
+            </a>
+            <!-- Я міг перемістити логотип перед тегом address, створивши тим самим обгортку для логотипа та списку, але судячи по твоїм словам, то ми можемо в тег addres закидати інші теги. Тож щоб не робити діватос, згрупував їх -->
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__location" href="#">
+                        14 Green St., Belmont, Boston. <span class="text-big">usa</span>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="mailto:info@dolguldur.com">
+                        info@dolguldur.com
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="tel:+380991111111">
+                        +38 099 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </address>
+    </div>
+</footer>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
+
+<!-- заголовок  -->

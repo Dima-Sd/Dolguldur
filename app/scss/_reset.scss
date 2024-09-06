@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    font-size: inherit;
+    // Я писав обгортці team__column font-size який є однаковим як для тексту ,так і для заголовка, але h3 не успадкувала цю властивість
+    font-weight: inherit;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    outline: transparent;
+    border: none;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
