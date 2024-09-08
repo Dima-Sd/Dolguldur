@@ -3,42 +3,51 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.42px; // 3% // перевів з процентів на десяткові дроби, бо ніби браузер не підтримує letter-spacing у відсотках
-    background-color: $background;
+    letter-spacing: normal;
+    background-color: $light;
     font-style: normal;
-    color: $accented;
+    color: $dark-500;
 }
 
 .container {
     max-width: 1200px;
-    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .section {
     padding: 94px 0;
 }
 
-.text-big {
-    text-transform: uppercase;
+.title {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 49px;
+    text-align: center;
 }
 
-%button {
-    background-color: $button;
-    color: $background;
+.button {
+    background-color: $accent;
+    color: $light;
     font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
     letter-spacing: 0.96px;
     padding: 10px 50px;
     line-height: 1.8;
     font-weight: 700;
-    display: block;
-}
-
-.button {
-    @extend %button;
+    display: inline-block;
 }

@@ -1,106 +1,60 @@
 .header {
-    position: relative;
+    border-bottom: 1px solid $light-800;
+    padding: 22px 0;
 
-    &::before {
-        content: "";
-        position: absolute;
-        width: 100%; // ширина ,як у батька
-        height: 1px;
-        right: 0; // пишу right:0, щоб позначити браузеру де початкова точка елемента
-        bottom: 0;
-        background-color: $line;
-    }
-
-    &__content {
+    &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
 
-        padding: 22px 0;
+    &__list {
+        display: flex;
+        gap: 44px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        line-height: 1.2;
+        color: $dark-light;
     }
 }
 
 .menu {
     display: flex;
     align-items: center;
+    gap: 89px;
 
     &__list {
         display: flex;
-    }
-
-    &__item:not(:last-child) {
-        margin-right: 50px;
+        gap: 50px;
     }
 
     &__link {
         font-size: 16px;
         line-height: 1.1;
-        letter-spacing: 0.32px;
-
-        //  padding: 24px 0; Олексію, в мене була така задумка, щоб по замовчуванню написати силці, що padding 24px буде зверху та знизу, бо focus буде так розширюватися. І відповідно лінію, яка буде позначати поточну сторінку сайту розмістити просто внизу, написавши bottom 0
-        //  І тим самим я наперед напишу розміщення лінії при інтерактиві
-        &--active {
-            color: $button;
-            position: relative;
-
-            &::before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 4px;
-                background-color: $button;
-                top: 43px; // Роблю позиціонування від верху, а не від низу, бо якщо будуть виконуватися якісь зміни в нижній секціЇ, то щоб лінія, яка підкреслює силку не змінила своє місце положення
-                border-radius: 2px;
-            }
-        }
-    }
-}
-
-.logo {
-    // Я так розумію ти це мав на увазі,коли казав, що мені потрібно навчитися виясняти в яких ситуаціях використовувати margin а коли gap
-    margin-right: 89px;
-}
-
-.header {
-    &__list {
-        display: flex;
-    }
-
-    &__item:not(:last-child) {
-        margin-right: 65px;
-        // Саме такі значення, тому що той декоративний елемент, який ми позиціонуємо, він не відчуває марджинів. От я і додав ширину елемента і відступ, який був між цим елементом та номеру телефону
-    }
-
-    &__link {
-        font-style: normal;
-        color: $content;
-        line-height: 1.2;
-        letter-spacing: 0.28px;
+        padding: 24px 0;
         position: relative;
 
         &::before {
             content: "";
             position: absolute;
-            top: 50%;
-
-            transform: translateY(-50%);
-            width: 16px;
-            height: 16px;
-            // Пишу найбільшу ширину та висоту елементів,
-            // використовуючи background-size: contain;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
+            width: 100%;
+            height: 4px;
+            background-color: transparent;
+            border-radius: 2px;
+            bottom: -5px;
         }
 
-        &--email::before {
-            background-image: url('../images/decorations/e-mail.svg');
-            left: -26px;
-        }
+        &.current {
+            color: $accent;
 
-        &--phone::before {
-            background-image: url('../images/decorations/smartphone.svg');
-            left: -20px;
+            &::before {
+                background-color: $accent;
+            }
         }
     }
 }

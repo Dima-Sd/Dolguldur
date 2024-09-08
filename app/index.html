@@ -5,111 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        DolGuldur
+        Web company DolGuldur
     </title>
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
     <link rel="manifest" href="images/favicons/site.webmanifest">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Roboto&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <header class="header">
-    <div class="container">
-        <div class="header__content">
-            <nav class="menu">
-                <a class="logo" href="#">
-                    <img class="logo__img" width="189" height="36" src="./images/logo-header.svg" alt="logo">
+    <div class="container header__container">
+        <nav class="menu">
+            <a class="logo" href="#">
+                <img class="logo__img" width="189" height="36" src="./images/logo-header.svg" alt="logo DolGuldur">
+            </a>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link current" href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">
+                        Our Works
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">
+                        Contacts
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <ul class="header__list">
+            <li class="header__item">
+                <a class="header__link" href="mailto:info@dolguldur.com">
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z"
+                            fill="#757575" />
+                    </svg>
+                    info@dolguldur.com
                 </a>
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link menu__link--active" href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            Our Works
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            Contacts
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <address class="header__contacts">
-                <ul class="header__list">
-                    <li class="header__item"> <!-- Однотипні елементи -->
-                        <a class="header__link header__link--email" href="mailto:info@dolguldur.com">
-                            info@dolguldur.com
-                        </a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link header__link--phone" href="tel:+380961111111">
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-            </address>
-        </div>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="tel:+380961111111">
+                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
+                            fill="#757575" />
+                        <path
+                            d="M2.35355 13.7389C2.54882 13.9213 2.54882 14.2169 2.35355 14.3992C2.15828 14.5816 1.84172 14.5816 1.64645 14.3992C1.45118 14.2169 1.45118 13.9213 1.64645 13.7389C1.84172 13.5566 2.15828 13.5566 2.35355 13.7389Z"
+                            fill="#757575" />
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </li>
+        </ul>
     </div>
 </header>
 <main class="main">
-    <section class="homepage">
+    <section class="hero">
         <div class="container">
-            <div class="homepage__inner">
-                <h1 class="homepage__title">
+            <h1 class="visually-hidden">
+                Website development by DolGuldur
+            </h1>
+            <div class="hero__content">
+                <h2 class="hero__title">
                     author's forge where your sites are created
-                </h1>
+                </h2>
                 <button class="button" type="button">
                     Go to order
                 </button>
             </div>
         </div>
     </section>
-    <section class="about section"><!-- або просто зробити через div -->
+    <section class="advantages section">
         <div class="container">
             <h2 class="visually-hidden">
-                skills
+                Our advantages
             </h2>
-            <ul class="about__inner">
-                <li class="about__item">
-                    <h3 class="about__title">
-                        <!-- Тут спірний момент, тому що потрібен справжній контент, бо саме через контент ми дивимся, чи поєднаний по смислу з текстом, чи ні. Або заголовок повинен стисло розповідати користувачу про те, що буде йти в тексті. Але так, як немає заголовку в секції, то і відповідно немає бути подальшого розділення на підтеми, тож робимо обичним текстом    -->
+            <ul class="advantages__inner">
+                <li class="advantages__item">
+                    <h3 class="advantages__subtitle">
                         Effective team
                     </h3>
-                    <p class="about__text">
+                    <p class="advantages__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                     </p>
                 </li>
-                <li class="about__item">
-                    <h3 class="about__title">
+                <li class="advantages__item">
+                    <h3 class="advantages__subtitle">
                         punctuality
                     </h3>
-                    <p class="about__text">
+                    <p class="advantages__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                     </p>
                 </li>
-                <li class="about__item">
-                    <p class="about__title">
+                <li class="advantages__item">
+                    <h3 class="advantages__subtitle">
                         planning
-                    </p>
-                    <p class="about__text">
+                    </h3>
+                    <p class="advantages__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                     </p>
                 </li>
-                <li class="about__item">
-                    <p class="about__title">
+                <li class="advantages__item">
+                    <h3 class="advantages__subtitle">
                         innovation
-                    </p>
-                    <p class="about__text">
+                    </h3>
+                    <p class="advantages__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                     </p>
                 </li>
@@ -121,27 +135,27 @@
             <h2 class="title">
                 Our services
             </h2>
-            <ul class="services__inner">
+            <ul class="services__list">
                 <li class="services__item">
-                    <img class="services__img" width="370" height="294" src="./images/services/service.jpg"
-                        alt="a desktop on which user devices lie">
                     <h3 class="services__title">
                         desktop apps
                     </h3>
+                    <img class="services__img" width="370" height="294" src="./images/services/service.jpg"
+                        alt="a desktop on which user devices lie">
                 </li>
                 <li class="services__item">
-                    <img class="services__img" width="370" height="294" src="./images/services/service-2.jpg"
-                        alt="user holding his mobile phone">
                     <h3 class="services__title">
                         mobile apps
                     </h3>
+                    <img class="services__img" width="370" height="294" src="./images/services/service-2.jpg"
+                        alt="user holding his mobile phone">
                 </li>
                 <li class="services__item">
-                    <img class="services__img" width="370" height="294" src="./images/services/service-3.jpg"
-                        alt="A hand holds a colored pencil, a box of pencils is next to it">
                     <h3 class="services__title">
                         modern design
                     </h3>
+                    <img class="services__img" width="370" height="294" src="./images/services/service-3.jpg"
+                        alt="A hand holds a colored pencil, a box of pencils is next to it">
                 </li>
             </ul>
         </div>
@@ -151,49 +165,48 @@
             <h2 class="title">
                 Our team
             </h2>
-            <ul class="team__inner">
+            <ul class="team__list">
                 <li class="team__item">
                     <img class="team__img" src="./images/team/team.jpg" width="270" height="260" alt="Paul Castanie">
-                    <div class="team__column">
-                        <h3 class="team__username">
+                    <div class="team__content">
+                        <h3 class="team__name">
                             Paul Castanie
                         </h3>
-                        <p class="team__description">
+                        <p class="team__profession">
                             Product Designer
                         </p>
                     </div>
                 </li>
                 <li class="team__item">
                     <img class="team__img" src="./images/team/team-2.jpg" width="270" height="260" alt="Joanna Nix">
-                    <div class="team__column">
-                        <h3 class="team__username">
+                    <div class="team__content">
+                        <h3 class="team__name">
                             Joanna Nix
                         </h3>
-                        <p class="team__description">
+                        <p class="team__profession">
                             Frontend Developer
                         </p>
                     </div>
                 </li>
                 <li class="team__item">
                     <img class="team__img" src="./images/team/team-3.jpg" width="270" height="260" alt="Aldo Delara">
-                    <div class="team__column">
-                        <h3 class="team__username">
+                    <div class="team__content">
+                        <h3 class="team__name">
                             Aldo Delara
                         </h3>
-                        <p class="team__description">
+                        <p class="team__profession">
                             Marketing
                         </p>
                     </div>
                 </li>
                 <li class="team__item">
                     <img src="./images/team/team-4.jpg" width="270" height="260" alt="Oladimeji Odunsi">
-                    <div class="team__column">
-                        <!-- Я хотів задати відступ не створюючи обгортки, відповідно критерію, але не вийшло -->
-                        <h3 class="team__username">
+                    <div class="team__content">
+                        <h3 class="team__name">
                             Oladimeji Odunsi
                         </h3>
-                        <p class="team__description">
-                            <span class="text-big">ui</span> Designer
+                        <p class="team__profession">
+                            UI Designer
                         </p>
                     </div>
                 </li>
@@ -204,34 +217,33 @@
 
 <footer class="footer">
     <div class="container">
-        <address class="footer__contacts">
+        <div class="footer__inner">
             <a class="logo footer__logo" href="#">
-                <img class="logo__img" width="140" height="25" src="./images/logo-footer.svg" alt="logo">
+                <img class="logo__img" width="140" height="25" src="./images/logo-footer.svg" alt="logo DolGuldur">
             </a>
-            <!-- Я міг перемістити логотип перед тегом address, створивши тим самим обгортку для логотипа та списку, але судячи по твоїм словам, то ми можемо в тег addres закидати інші теги. Тож щоб не робити діватос, згрупував їх -->
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <a class="footer__location" href="#">
-                        14 Green St., Belmont, Boston. <span class="text-big">usa</span>
-                    </a>
-                </li>
-                <li class="footer__item">
-                    <a class="footer__link" href="mailto:info@dolguldur.com">
-                        info@dolguldur.com
-                    </a>
-                </li>
-                <li class="footer__item">
-                    <a class="footer__link" href="tel:+380991111111">
-                        +38 099 111 11 11
-                    </a>
-                </li>
-            </ul>
-        </address>
+            <address class="footer__contacts">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__location" href="#">
+                            14 Green St., Belmont, Boston. USA
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="mailto:info@dolguldur.com">
+                            info@dolguldur.com
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="tel:+380991111111">
+                            +38 099 111 11 11
+                        </a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </div>
 </footer>
 <script src="js/main.min.js"></script>
 </body>
 
 </html>
-
-<!-- заголовок  -->

@@ -1,33 +1,24 @@
-@import "vars";
 @import "reset";
+@import "vars";
 @import "global";
 
 @import "global/header";
 @import "global/footer";
-@import "global/title";
-// Така приблизно це все працює? Ми бачимо, що код на сторінці повторюється і відповідно створюємо для них окремий файл
 
-// homepage
+.hero {
+    background-color: $dark;
+    padding: 204px 0;
 
-.homepage {
-    background-color: $homepage-bg;
-
-    &__inner {
-        height: calc(100vh - 80px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-
+    &__content {
         max-width: 696px;
         width: 100%;
         margin: 0 auto;
+        text-align: center;
     }
 
     &__title {
         font-size: 44px;
-        color: $background;
+        color: $light;
         text-transform: uppercase;
         line-height: 1.3;
         letter-spacing: 2.64px;
@@ -36,20 +27,11 @@
     }
 }
 
-// about
-
-.about {
+.advantages {
     &__inner {
         display: flex;
         justify-content: space-between;
         gap: 30px;
-    }
-
-    &__title {
-        text-transform: uppercase;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-bottom: 9px;
     }
 
     &__item {
@@ -57,17 +39,22 @@
         width: 100%;
     }
 
+    &__subtitle {
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 9px;
+    }
+
     &__text {
-        color: $content;
+        color: $dark-light;
     }
 }
-
-// services
 
 .services {
     padding-top: 0px;
 
-    &__inner {
+    &__list {
         display: flex;
         justify-content: space-between;
         gap: 30px;
@@ -80,7 +67,7 @@
     &__title {
         font-size: 16px;
         text-transform: uppercase;
-        color: $background;
+        color: $light;
         line-height: 1.1;
 
         position: absolute;
@@ -89,16 +76,14 @@
         padding: 25px 10px;
         width: 100%;
         text-align: center;
-        background-color: $services-bg;
+        background-color: $dark-opacity;
     }
 }
 
-// team
-
 .team {
-    background-color: $team-bg;
+    background-color: $light-600;
 
-    &__inner {
+    &__list {
         display: flex;
         justify-content: space-between;
         gap: 30px;
@@ -107,24 +92,24 @@
     &__item {
         max-width: 270px;
         width: 100%;
-        background-color: $background;
+        background-color: $light;
         box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.30);
         border-radius: 0px 0px 4px 4px;
         text-align: center;
     }
 
-    &__column {
+    &__content {
         font-size: 16px;
         line-height: 1.1;
         padding: 30px 15px;
     }
 
-    &__username {
+    &__name {
         margin-bottom: 10px;
     }
 
-    &__description {
+    &__profession {
         font-family: "Roboto", sans-serif;
-        color: $content;
+        color: $dark-light;
     }
 }

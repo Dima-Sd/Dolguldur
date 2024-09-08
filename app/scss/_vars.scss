@@ -1,12 +1,12 @@
-$accented: #212121;
-$background: #fff;
-$line: #ECECEC;
-$button: #EC3C05;
-$content: #757575;
-$homepage-bg: #000000;
-$services-bg: rgba(47, 48, 58, 0.6);
-$team-bg: #F5F4FA;
-$footer-bg: #070303;
-$link: #F29040;
-// font-family: "Roboto", sans-serif;
-// font-family: "Rajdhani", sans-serif;
+$accent: #EC3C05;
+$secondary: #F29040;
+
+$dark: #000;
+$dark-800: #070303;
+$dark-opacity: rgba($dark, 0.6);
+$dark-500: #212121;
+$dark-light: #757575;
+
+$light: #fff;
+$light-800: #ECECEC;
+$light-600: #F5F4FA;

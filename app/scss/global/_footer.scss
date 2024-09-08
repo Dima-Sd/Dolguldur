@@ -1,7 +1,7 @@
 // footer
 .footer {
     padding: 64px 0 60px;
-    background-color: $footer-bg;
+    background-color: $dark-800;
 
     &__contacts {
         max-width: 245px;
@@ -9,13 +9,8 @@
     }
 
     &__logo {
-        display: block;
-        margin-right: 0;
+        display: inline-block;
         margin-bottom: 22px;
-    }
-
-    &__item {
-        font-style: normal;
     }
 
     &__item:not(:last-child) {
@@ -23,10 +18,10 @@
     }
 
     &__location {
-        color: $background;
+        color: $light;
     }
 
     &__link {
-        color: $link;
+        color: $secondary;
     }
 }
