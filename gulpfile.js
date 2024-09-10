@@ -24,7 +24,8 @@ function styles() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
-        'app/js/main.js'
+        'node_modules/mixitup/dist/mixitup.js',
+        'app/js/main.js',
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
@@ -72,4 +73,4 @@ exports.CleanDist = CleanDist
 exports.watching = watching
 exports.browsersync = browsersync
 exports.build = build
-exports.default = parallel(watching,browsersync,)
+exports.default = parallel(watching, browsersync,)
