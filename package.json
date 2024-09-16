@@ -19,5 +19,8 @@
   },
   "author": "Dmytros",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
 }

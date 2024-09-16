@@ -53,14 +53,14 @@ img {
 input,
 button,
 textarea,
-select,
-a {
+select {
     outline: transparent;
     border: none;
     font: inherit;
 }
 
 a {
+    outline: transparent;
     text-decoration: none;
     color: inherit;
 }

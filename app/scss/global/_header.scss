@@ -19,8 +19,14 @@
         gap: 10px;
 
         line-height: 1.2;
+        letter-spacing: 0.28px;
         color: $dark-light;
     }
+
+    &__icon {
+        fill: $dark-light;
+    }
+
 }
 
 .menu {

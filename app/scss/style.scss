@@ -1,170 +1,18 @@
 @import "reset";
+@import "../../node_modules/slick-carousel/slick/slick.css";
 @import "vars";
 @import "global";
 
+// global
+@import "global/socials";
+@import "global/card";
 @import "global/header";
 @import "global/footer";
 
-.hero {
-    background-color: $dark;
-    padding: 204px 0;
-
-    &__content {
-        max-width: 696px;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    &__title {
-        font-size: 44px;
-        color: $light;
-        text-transform: uppercase;
-        line-height: 1.3;
-        letter-spacing: 2.64px;
-        margin-bottom: 30px;
-        font-weight: 700;
-    }
-}
-
-.advantages {
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-    }
-
-    &__item {
-        max-width: 270px;
-        width: 100%;
-    }
-
-    &__subtitle {
-        text-transform: uppercase;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-bottom: 9px;
-    }
-
-    &__text {
-        color: $dark-light;
-    }
-}
-
-.services {
-    padding-top: 0px;
-
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-    }
-
-    &__item {
-        position: relative;
-    }
-
-    &__title {
-        font-size: 16px;
-        text-transform: uppercase;
-        color: $light;
-        line-height: 1.1;
-
-        position: absolute;
-        bottom: 0;
-
-        padding: 25px 10px;
-        width: 100%;
-        text-align: center;
-        background-color: $dark-opacity;
-    }
-}
-
-.team {
-    background-color: $light-600;
-
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-    }
-
-    &__item {
-        max-width: 270px;
-        width: 100%;
-        background-color: $light;
-        box-shadow: 2px 3px 3px $dark-opacity-300;
-        border-radius: 0px 0px 4px 4px;
-        text-align: center;
-    }
-
-    &__content {
-        font-size: 16px;
-        line-height: 1.1;
-        padding: 30px 15px;
-    }
-
-    &__name {
-        margin-bottom: 10px;
-    }
-
-    &__profession {
-        color: $dark-light;
-    }
-}
-
-.works {
-    padding: 94px 0;
-
-    &__list {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 50px;
-    }
-
-    &__button {
-        letter-spacing: 0.48px;
-        padding: 11px 26px;
-        font-size: 16px;
-        background-color: $light-600;
-        border-radius: 4px;
-        line-height: 1;
-
-        &.mixitup-control-active {
-            background-color: $accent;
-            color: $light;
-        }
-    }
-}
-
-.card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-
-    &__item {
-        max-width: 370px;
-        width: 100%;
-    }
-
-    &__content {
-        padding: 20px 24px;
-        border: 1px solid $dark-light;
-        border-top: 0px;
-    }
-
-    &__subtitle {
-        font-size: 18px;
-        line-height: 2;
-        margin-bottom: 4px;
-        letter-spacing: 1.08px;
-    }
-
-    &__category {
-        line-height: 1.8;
-        color: $dark-light;
-        font-size: 16px;
-    }
-}
+// pages
+@import "pages/index/advantages";
+@import "pages/index/hero";
+@import "pages/index/services";
+@import "pages/index/team";
+@import "pages/index/partners";
+@import "pages/works";

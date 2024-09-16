@@ -1,0 +1,32 @@
+.advantages {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__item {
+        max-width: 270px;
+        width: 100%;
+    }
+
+    &__box {
+        padding: 24px;
+        border: 1px solid $dark-light;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__subtitle {
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 9px;
+    }
+
+    &__text {
+        color: $dark-light;
+    }
+}

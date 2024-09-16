@@ -33,7 +33,7 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="our-works.html">
+                    <a class="menu__link" href="works.html">
                         Our Works
                     </a>
                 </li>
@@ -48,35 +48,34 @@
         <ul class="header__list">
             <li class="header__item">
                 <a class="header__link" href="mailto:info@dolguldur.com">
-                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z"
-                            fill="#757575" />
+                    <svg class="header__icon" width="16" height="12">
+                        <use href="./images/sprite.svg#e-mail"></use>
                     </svg>
                     info@dolguldur.com
                 </a>
             </li>
             <li class="header__item">
                 <a class="header__link" href="tel:+380961111111">
-                    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
-                            fill="#757575" />
-                        <path
-                            d="M2.35355 13.7389C2.54882 13.9213 2.54882 14.2169 2.35355 14.3992C2.15828 14.5816 1.84172 14.5816 1.64645 14.3992C1.45118 14.2169 1.45118 13.9213 1.64645 13.7389C1.84172 13.5566 2.15828 13.5566 2.35355 13.7389Z"
-                            fill="#757575" />
+                    <svg class="header__icon" width="10" height="16">
+                        <use href="./images/sprite.svg#phone"></use>
                     </svg>
                     +38 096 111 11 11
                 </a>
             </li>
         </ul>
+
     </div>
 </header>
 <main class="main">
+    <h1 class="visually-hidden">
+        Website development by DolGuldur
+    </h1>
     <section class="hero">
-        <h1 class="visually-hidden">
-            Website development by DolGuldur
-        </h1>
+        <div class="hero__slider">
+            <div class="hero__slider-item" style="background-image: url(./images/slider/slick-picture-1.jpg);"></div>
+            <div class="hero__slider-item" style="background-image: url(./images/slider/slick-picture-2.jpg);"></div>
+            <div class="hero__slider-item" style="background-image: url(./images/slider/slick-picture-3.jpg);"></div>
+        </div>
         <div class="container">
             <div class="hero__content">
                 <h2 class="hero__title">
@@ -95,6 +94,11 @@
             </h2>
             <ul class="advantages__inner">
                 <li class="advantages__item">
+                    <div class="advantages__box">
+                        <svg class="advantages__icon" width="70" height="70">
+                            <use href="./images/sprite.svg#advantages-first"></use>
+                        </svg>
+                    </div>
                     <h3 class="advantages__subtitle">
                         Effective team
                     </h3>
@@ -103,6 +107,11 @@
                     </p>
                 </li>
                 <li class="advantages__item">
+                    <div class="advantages__box">
+                        <svg class="advantages__icon" width="70" height="70">
+                            <use href="./images/sprite.svg#advantages-second"></use>
+                        </svg>
+                    </div>
                     <h3 class="advantages__subtitle">
                         punctuality
                     </h3>
@@ -111,6 +120,11 @@
                     </p>
                 </li>
                 <li class="advantages__item">
+                    <div class="advantages__box">
+                        <svg class="advantages__icon" width="70" height="70">
+                            <use href="./images/sprite.svg#advantages-third"></use>
+                        </svg>
+                    </div>
                     <h3 class="advantages__subtitle">
                         planning
                     </h3>
@@ -119,6 +133,11 @@
                     </p>
                 </li>
                 <li class="advantages__item">
+                    <div class="advantages__box">
+                        <svg class="advantages__icon" width="70" height="70">
+                            <use href="./images/sprite.svg#advantages-fourth"></use>
+                        </svg>
+                    </div>
                     <h3 class="advantages__subtitle">
                         innovation
                     </h3>
@@ -168,46 +187,304 @@
                 <li class="team__item">
                     <img class="team__img" src="./images/team/team.jpg" width="270" height="260" alt="Paul Castanie">
                     <div class="team__content">
-                        <h3 class="team__name">
-                            Paul Castanie
-                        </h3>
-                        <p class="team__profession">
-                            Product Designer
-                        </p>
+                        <div class="team__info">
+                            <h3 class="team__name">
+                                Paul Castanie
+                            </h3>
+                            <p class="team__profession">
+                                Product Designer
+                            </p>
+                        </div>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a class="socials__link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#instagram"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Paul Castanie's Instagram
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Paul Castanie's twitter
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Paul Castanie's facebook
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#linkedin"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Paul Castanie's linkedin
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </li>
                 <li class="team__item">
                     <img class="team__img" src="./images/team/team-2.jpg" width="270" height="260" alt="Joanna Nix">
                     <div class="team__content">
-                        <h3 class="team__name">
-                            Joanna Nix
-                        </h3>
-                        <p class="team__profession">
-                            Frontend Developer
-                        </p>
+                        <div class="team__info">
+                            <h3 class="team__name">
+                                Joanna Nix
+                            </h3>
+                            <p class="team__profession">
+                                Frontend Developer
+                            </p>
+                        </div>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#instagram"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Joanna Nix's Instagram
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Joanna Nix's twitter
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Joanna Nix's facebook
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#linkedin"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Joanna Nix's linkedin
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </li>
                 <li class="team__item">
                     <img class="team__img" src="./images/team/team-3.jpg" width="270" height="260" alt="Aldo Delara">
                     <div class="team__content">
-                        <h3 class="team__name">
-                            Aldo Delara
-                        </h3>
-                        <p class="team__profession">
-                            Marketing
-                        </p>
+                        <div class="team__info">
+                            <h3 class="team__name">
+                                Aldo Delara
+                            </h3>
+                            <p class="team__profession">
+                                Marketing
+                            </p>
+                        </div>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#instagram"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Aldo Delara's Instagram
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Aldo Delara's twitter
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Aldo Delara's facebook
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#linkedin"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Aldo Delara's linkedin
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </li>
                 <li class="team__item">
                     <img src="./images/team/team-4.jpg" width="270" height="260" alt="Oladimeji Odunsi">
                     <div class="team__content">
-                        <h3 class="team__name">
-                            Oladimeji Odunsi
-                        </h3>
-                        <p class="team__profession">
-                            UI Designer
-                        </p>
+                        <div class="team__info">
+                            <h3 class="team__name">
+                                Oladimeji Odunsi
+                            </h3>
+                            <p class="team__profession">
+                                UI Designer
+                            </p>
+                        </div>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#instagram"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Oladimeji Odunsi's Instagram
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Oladimeji Odunsi's twitter
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Oladimeji Odunsi's facebook
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link" target="_blank" rel="noopener noreferrer">
+                                    <svg class="socials__icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#linkedin"></use>
+                                    </svg>
+                                    <div class="visually-hidden">
+                                        Go to Oladimeji Odunsi's linkedin
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="partners section">
+        <div class="container">
+            <h2 class="title">
+                Our partners
+            </h2>
+            <ul class="partners__list">
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank">
+                        <div class="partners__box">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="./images/sprite.svg#rails"></use>
+                            </svg>
+                            <div class="visually-hidden">
+                                switch to the Rails web framework
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank">
+                        <div class="partners__box">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="./images/sprite.svg#googlepay"></use>
+                            </svg>
+                            <div class="visually-hidden">
+                                go to the Google Play platform
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank">
+                        <div class="partners__box">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="./images/sprite.svg#playstation"></use>
+                            </svg>
+                            <div class="visually-hidden">
+                                switch to the PlayStation game console brand
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank">
+                        <div class="partners__box">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="./images/sprite.svg#applepay"></use>
+                            </svg>
+                            <div class="visually-hidden">
+                                switch to the Apple Pay payment service
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank">
+                        <div class="partners__box">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="./images/sprite.svg#npm"></use>
+                            </svg>
+                            <div class="visually-hidden">
+                                switch to npm payment manager
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank">
+                        <div class="partners__box">
+                            <svg class="partners__icon" width="60" height="60">
+                                <use href="./images/sprite.svg#ubereats"></use>
+                            </svg>
+                            <div class="visually-hidden">
+                                switch to a paid food delivery service
+                            </div>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -217,28 +494,81 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__inner">
-            <a class="logo footer__logo" href="#">
-                <img class="logo__img" width="140" height="25" src="./images/logo-footer.svg" alt="logo DolGuldur">
-            </a>
-            <address class="footer__contacts">
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a class="footer__location" href="#">
-                            14 Green St., Belmont, Boston. USA
+            <div class="footer__info">
+                <a class="logo footer__logo" href="#">
+                    <img class="logo__img" width="140" height="25" src="./images/logo-footer.svg" alt="logo DolGuldur">
+                </a>
+                <address class="footer__contacts">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__location" href="#">
+                                14 Green St., Belmont, Boston. USA
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="mailto:info@dolguldur.com">
+                                info@dolguldur.com
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="tel:+380991111111">
+                                +38 099 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer__content">
+                <span class="footer__text">
+                    join
+                </span>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a class="socials__link footer__socials-link" href="#" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="socials__icon footer__socials-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                            <div class="visually-hidden">
+                                go to Instagram
+                            </div>
                         </a>
                     </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="mailto:info@dolguldur.com">
-                            info@dolguldur.com
+                    <li class="socials__item">
+                        <a class="socials__link footer__socials-link" href="#" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="socials__icon footer__socials-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#twitter"></use>
+                            </svg>
+                            <div class="visually-hidden">
+                                go to twitter
+                            </div>
                         </a>
                     </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="tel:+380991111111">
-                            +38 099 111 11 11
+                    <li class="socials__item">
+                        <a class="socials__link footer__socials-link" href="#" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="socials__icon footer__socials-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                            <div class="visually-hidden">
+                                go to facebook
+                            </div>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link footer__socials-link" href="#" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="socials__icon footer__socials-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#linkedin"></use>
+                            </svg>
+                            <div class="visually-hidden">
+                                go to linkedin
+                            </div>
                         </a>
                     </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </div>
 </footer>

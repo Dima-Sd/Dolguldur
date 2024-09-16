@@ -1,0 +1,28 @@
+.services {
+    padding-top: 0px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__title {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $light;
+        line-height: 1.1;
+
+        position: absolute;
+        bottom: 0;
+
+        padding: 25px 10px;
+        width: 100%;
+        text-align: center;
+        background-color: $dark-400;
+    }
+}

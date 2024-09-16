@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        The company's DolGuldur portfolio
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <nav class="menu">
+                <a class="logo" href="#">
+                    <img class="logo__img" width="189" height="36" src="./images/logo-header.svg" alt="logo DolGuldur">
+                </a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link current" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="works.html">
+                            Our Works
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="header__list">
+                <li class="header__item">
+                    <a class="header__link" href="mailto:info@dolguldur.com">
+                        <svg class="header__icon" width="16" height="12">
+                            <use href="./images/sprite.svg#e-mail"></use>
+                        </svg>
+                        info@dolguldur.com
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="tel:+380961111111">
+                        <svg class="header__icon" width="10" height="16">
+                            <use href="./images/sprite.svg#phone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="visually-hidden">
+            Works of the DolGuldur company
+        </h1>
+        <section class="works section">
+            <div class="container">
+                <ul class="works__list">
+                    <li class="works__item">
+                        <button class="works__button" type="button" data-filter="all">
+                            All
+                        </button>
+                    </li>
+                    <li class="works__item">
+                        <button class="works__button" type="button" data-filter=".category-webSite">
+                            Web-sites
+                        </button>
+                    </li>
+                    <li class="works__item">
+                        <button class="works__button" type="button" data-filter=".category-apps">
+                            Apps
+                        </button>
+                    </li>
+                    <li class="works__item">
+                        <button class="works__button" type="button" data-filter=".category-desing">
+                            Designes
+                        </button>
+                    </li>
+                    <li class="works__item">
+                        <button class="works__button" type="button" data-filter=".category-brands">
+                            Brands
+                        </button>
+                    </li>
+                </ul>
+
+                <ul class="works__card-list">
+                    <li class="works__card-item mix category-webSite">
+                        <div class="card">
+                            <img class="card__img" width="370" height="294" src="./images/works/work-1.jpg"
+                                alt="on the table are user devices and a laptop with a website about the world of sofas">
+                            <div class="card__content">
+                                <h2 class="card__title">
+                                    Sofa World
+                                </h2>
+                                <span class="card__category">
+                                    Web-site
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="works__card-item mix category-brands">
+                        <div class="card">
+                            <img class="card__img" width="370" height="294" src="./images/works/work-2.jpg"
+                                alt="a cardboard cup with a picture of Moby Dick coffee on it">
+                            <div class="card__content">
+                                <h2 class="card__title">
+                                    Moby Dick Caffe
+                                </h2>
+                                <span class="card__category">
+                                    Brand
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="works__card-item mix category-apps">
+                        <div class="card">
+                            <img class="card__img" width="370" height="294" src="./images/works/work-3.jpg"
+                                alt="tesla logo on a red background ">
+                            <div class="card__content">
+                                <h2 class="card__title">
+                                    Tesla charger-map
+                                </h2>
+                                <span class="card__category">
+                                    App
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="works__card-item mix category-desing">
+                        <div class="card">
+                            <img class="card__img" width="370" height="294" src="./images/works/work-4.jpg"
+                                alt="a woman sitting on a pier near the water">
+                            <div class="card__content">
+                                <h2 class="card__title">
+                                    Bronze Sky
+                                </h2>
+                                <span class="card__category">
+                                    Design
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="works__card-item mix category-desing">
+                        <div class="card">
+                            <img class="card__img" width="370" height="294" src="./images/works/work-5.jpg"
+                                alt="A magazine called Cereal Travel with a camera next to it ">
+                            <div class="card__content">
+                                <h2 class="card__title">
+                                    Cereal Travel Magazine
+                                </h2>
+                                <span class="card__category">
+                                    Design
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="works__card-item mix category-apps">
+                        <div class="card">
+                            <img class="card__img" width="370" height="294" src="./images/works/work-6.jpg"
+                                alt="the user is holding a phone with the stock photo bank application on it">
+                            <div class="card__content">
+                                <h2 class="card__title">
+                                    Photonium
+                                </h2>
+                                <span class="card__category">
+                                    App
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="works__card-item mix category-brands">
+                        <div class="card">
+                            <img class="card__img" width="370" height="294" src="./images/works/work-7.jpg"
+                                alt="a woman shows a motivational flag while on a mountain">
+                            <div class="card__content">
+                                <h2 class="card__title">
+                                    Keep Exploring
+                                </h2>
+                                <span class="card__category">
+                                    Brand
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="works__card-item mix category-desing">
+                        <div class="card">
+                            <img class="card__img" width="370" height="294" src="./images/works/work-8.jpg"
+                                alt="The Natural History Museum, located in London">
+                            <div class="card__content">
+                                <h2 class="card__title">
+                                    Architectural conceptual projects
+                                </h2>
+                                <span class="card__category">
+                                    Desing
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="works__card-item mix category-webSite">
+                        <div class="card">
+                            <img class="card__img" width="370" height="294" src="./images/works/work-9.jpg"
+                                alt="a laptop with an interior design website">
+                            <div class="card__content">
+                                <h2 class="card__title">
+                                    Le Buzz food service
+                                </h2>
+                                <span class="card__category">
+                                    Web-site
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <a class="logo footer__logo" href="#">
+                        <img class="logo__img" width="140" height="25" src="./images/logo-footer.svg"
+                            alt="logo DolGuldur">
+                    </a>
+                    <address class="footer__contacts">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__location" href="#">
+                                    14 Green St., Belmont, Boston. USA
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="mailto:info@dolguldur.com">
+                                    info@dolguldur.com
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="tel:+380991111111">
+                                    +38 099 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer__content">
+                    <span class="footer__text">
+                        join
+                    </span>
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a class="socials__link footer__socials-link" href="#" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg class="socials__icon footer__socials-icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link footer__socials-link" href="#" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg class="socials__icon footer__socials-icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link footer__socials-link" href="#" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg class="socials__icon footer__socials-icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link footer__socials-link" href="#" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg class="socials__icon footer__socials-icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

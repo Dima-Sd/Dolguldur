@@ -3,9 +3,15 @@
     padding: 64px 0 60px;
     background-color: $dark-800;
 
-    &__contacts {
-        max-width: 245px;
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__info {
+        max-width: 250px;
         width: 100%;
+        margin-right: 51px;
     }
 
     &__logo {
@@ -23,5 +29,26 @@
 
     &__link {
         color: $secondary;
+    }
+
+    &__content {
+        max-width: 206px;
+        width: 100%;
+    }
+
+    &__text {
+        display: inline-block;
+        color: $light;
+        text-transform: uppercase;
+        margin-bottom: 19px;
+        line-height: 1.2;
+    }
+
+    &__socials-link {
+        background-color: $light-100;
+    }
+
+    &__socials-icon {
+        fill: $light;
     }
 }
