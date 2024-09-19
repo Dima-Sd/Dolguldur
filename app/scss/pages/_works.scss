@@ -1,6 +1,7 @@
 .works {
     &__list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
         margin-bottom: 50px;
@@ -25,10 +26,5 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
-    }
-
-    &__card-item {
-        max-width: 370px;
-        width: 100%;
     }
 }

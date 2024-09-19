@@ -1,17 +1,25 @@
 .socials {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-top: auto;
     gap: 10px;
 
     &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
         background-color: $light;
         border-radius: 50%;
-        padding: 12px;
-        display: flex;
-        // Силка має інлайнову поведінку, через якого іконка, яка була у середині вона вилазила висотою за межі висоти силки. Тож я написа display: flex; і все вирішилося
     }
 
-    &__icon {
-        fill: $dark-light;
+    &__link--dark {
+        background-color: $light-100;
+
+        .icon {
+            fill: $light;
+        }
     }
 }

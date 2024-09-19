@@ -3,35 +3,8 @@
 
     &__list {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
-    }
-
-    &__item {
-        max-width: 270px;
-        width: 100%;
-        background-color: $light;
-        box-shadow: 2px 3px 3px $dark-opacity-300;
-        border-radius: 0px 0px 4px 4px;
-        text-align: center;
-    }
-
-    &__content {
-        padding: 30px 32px;
-    }
-
-    &__info {
-        font-size: 16px;
-        line-height: 1.1;
-        margin-bottom: 16px;
-    }
-
-    &__name {
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-
-    &__profession {
-        color: $dark-light;
     }
 }

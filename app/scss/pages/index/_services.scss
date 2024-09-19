@@ -3,7 +3,8 @@
 
     &__list {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
     }
 
@@ -24,5 +25,9 @@
         width: 100%;
         text-align: center;
         background-color: $dark-400;
+    }
+
+    &__img {
+        object-fit: cover;
     }
 }
