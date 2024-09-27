@@ -28,16 +28,31 @@ body {
     overflow: hidden;
 }
 
-.section {
-    padding: 94px 0;
+.logo {
+    border-radius: 4px;
+    transition: opacity 0.4s, outline 0.4s, outline-offset 0.4s, box-shadow 0.4s;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:focus {
+        outline: 1px solid $accent;
+        outline-offset: 4px;
+    }
+
+    //А чи можливо задати елементу тільки параметри тіні та зробити її прозорою, а при інтерактивному стані змінювати лише колір ?
+    &:active {
+        box-shadow: 4px 4px 4px 4px $dark-opacity-250;
+    }
+
+    &--light:active {
+        box-shadow: 4px 4px 4px 4px $accent-opacity-700;
+    }
 }
 
-.title {
-    letter-spacing: 0.49px;
-    font-size: 36px;
-    line-height: 1.25;
-    margin-bottom: 49px;
-    text-align: center;
+.section {
+    padding: 94px 0;
 }
 
 .button {
@@ -50,8 +65,32 @@ body {
     line-height: 1.8;
     font-weight: 700;
     display: inline-block;
+
+    transition: box-shadow 0.4s, outline 0.4s, outline-offset 0.4s;
+
+    &:hover {
+        box-shadow: 3px 3px 8px $dark-opacity-400;
+    }
+
+    &:focus {
+        outline: 1px solid $accent;
+        outline-offset: 4px;
+    }
+
+    &:active {
+        box-shadow: 3px 3px 8px $dark-opacity-400 inset;
+    }
+}
+
+.title {
+    letter-spacing: 0.49px;
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 49px;
+    text-align: center;
 }
 
 .icon {
+    transition: fill 0.4s;
     fill: $dark-light;
 }

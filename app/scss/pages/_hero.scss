@@ -21,22 +21,28 @@
         top: 0;
         left: 0;
         width: 100%;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        height: 100%;
         z-index: 1;
     }
 
     &__slider-item {
-        height: 600px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .slick-list {
+        height: 100%;
         overflow: hidden;
     }
 
     .slick-track {
+        height: 100%;
         display: flex;
+    }
+
+    .slick-slide div {
+        height: 100%;
     }
 
     &__content {
@@ -45,10 +51,6 @@
         width: 100%;
         text-align: center;
         position: relative;
-        // Заголовок більше за все потрібно ставити на позішен,
-        // тому що при доповнені конетенту,
-        // секція збільшується, що виходить не по макету. Але якщо стави заголовок на позішен, то потрібно відступ, той що в hero змінювати. Писати не 200 0, а 300 0, щоб було рівно 600, як на макеті
-        // Або щось робити з висотою слайдера 
         z-index: 3;
     }
 

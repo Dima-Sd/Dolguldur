@@ -15,16 +15,32 @@
         border-radius: 4px;
         line-height: 1;
 
+        transition: background-color 0.4s, color 0.4s, outline 0.4s, outline-offset 0.4s, opacity 0.4s;
+
         &.mixitup-control-active {
             background-color: $accent;
             color: $light;
+        }
+
+        &:hover {
+            background-color: $accent;
+            color: $light;
+        }
+
+        &:focus {
+            outline: 1px solid $accent;
+            outline-offset: 3px;
+        }
+
+        &:active {
+            opacity: 0.7;
         }
     }
 
     &__card-list {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 30px;
     }
 }

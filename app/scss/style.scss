@@ -6,14 +6,16 @@
 // global
 @import "global/header";
 @import "global/footer";
-@import "global/card-works";
-@import "global/card-team";
-@import "global/socials";
+@import "global/work-card";
+@import "global/team-card";
+@import "global/social";
+@import "global/modal";
+
 
 // pages
-@import "pages/index/advantages";
-@import "pages/index/hero";
-@import "pages/index/services";
-@import "pages/index/team";
-@import "pages/index/partners";
+@import "pages/advantages";
+@import "pages/hero";
+@import "pages/services";
+@import "pages/team";
+@import "pages/partners";
 @import "pages/works";

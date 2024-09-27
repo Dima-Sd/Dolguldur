@@ -1,0 +1,78 @@
+.backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: $dark-opacity-300;
+    backdrop-filter: blur(1px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity 0.5s;
+    opacity: 1;
+    pointer-events: all;
+
+    &.is-hidden {
+        pointer-events: none;
+        opacity: 0;
+
+        .modal {
+            transform: scale(0);
+        }
+    }
+}
+
+.modal {
+    width: 530px;
+    height: 580px;
+    background-color: $light;
+    box-shadow: 8px 8px 3px $dark-opacity-120;
+    transition: transform 0.5s;
+    transform: scale(1);
+    position: relative;
+
+    &__close {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        width: 44px;
+        height: 44px;
+
+        border-radius: 50%;
+        outline: 1px solid $dark-opacity-100;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: outline-color 0.4s, box-shadow 0.4s;
+
+        &:hover {
+            .modal__icon {
+                fill: $accent;
+            }
+        }
+
+        &:focus {
+            outline-color: $accent;
+        }
+
+        &:active {
+            box-shadow: 3px 3px 3px $dark-opacity-120 inset;
+
+            .modal__icon {
+                fill: $accent;
+            }
+        }
+    }
+
+    &__icon {
+        transition: fill 0.4s;
+        fill: $dark;
+        // Якщо елементу видалити fill, то по замовчуванню колір чорний. То чи потрібно перевизначати чорний колір в css?
+    }
+}

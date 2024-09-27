@@ -1,14 +1,22 @@
 $accent: #EC3C05;
+$accent-opacity-800: rgba($accent, 0.8);
+$accent-opacity-700: rgba($accent, 0.7);
+
 $secondary: #F29040;
+$secondary-opacity-600: rgba($secondary, 0.6);
 
 $dark: #000;
 $dark-800: #070303;
 $dark-opacity: rgba($dark, 0.6);
 $dark-500: #212121;
-$dark-400: rgba(47, 48, 58, 0.60);
-$dark-opacity-300: rgba($dark, 0.30);
+$dark-400: rgba(47, 48, 58, 0.6);
+$dark-opacity-500: rgba($dark-500, 0.5);
+$dark-opacity-400: rgba($dark, 0.4);
+$dark-opacity-300: rgba($dark, 0.3);
+$dark-opacity-250: rgba($dark, 0.25);
+$dark-opacity-120: rgba($dark, 0.12);
+$dark-opacity-100: rgba($dark, 0.1);
 $dark-light: #757575;
-
 
 $light: #fff;
 $light-800: #ECECEC;

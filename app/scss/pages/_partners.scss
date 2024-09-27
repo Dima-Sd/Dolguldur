@@ -1,0 +1,43 @@
+.partners {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 28px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 170px;
+        height: 92px;
+        border: 1px solid $dark-light;
+        border-radius: 4px;
+
+        transition: border-color 0.4s, outline 0.4s, outline-offset 0.4s, opacity 0.4s;
+
+        &:hover {
+            border-color: $accent;
+
+            .icon {
+                fill: $accent;
+            }
+        }
+
+        &:focus {
+            outline: 1px solid $accent;
+            outline-offset: 4px;
+        }
+
+        &:active {
+            //Якщо навести та зажати елемент, то ми отримаємо той візуал, який при active. Але якщо буде тільки active, то відповідного візуалу як у стайлгайді не буде. Тож потрібно перевизначати стилі
+            border-color: $accent-opacity-700;
+
+            .icon {
+                fill: $accent-opacity-700;
+            }
+        }
+    }
+}
