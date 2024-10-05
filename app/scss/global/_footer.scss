@@ -31,7 +31,7 @@
     &__link {
         color: $secondary;
         border-radius: 4px;
-        transition: color 0.4s, outline 0.4s, outline-offset 0.4s;
+        transition: color 0.4s, outline 0.4s, outline 0.4s, opacity 0.4s;
 
         &:hover {
             color: $accent;
@@ -43,13 +43,15 @@
         }
 
         &:active {
-            color: $secondary-opacity-600;
+            opacity: 0.6;
+            color: $secondary;
         }
     }
 
     &__content {
         max-width: 206px;
         width: 100%;
+        margin-right: 93px;
     }
 
     &__text {
@@ -60,15 +62,59 @@
         line-height: 1.2;
     }
 
-    &__socials-link {
-        background-color: $light-100;
+    &__form {
+        display: flex;
+        align-items: flex-end;
+        max-width: 570px;
+        width: 100%;
     }
 
-    &__socials-icon {
-        fill: $light;
+    &__label {
+        line-height: 1.2;
+        // Та форма, яка була в модалці, то там також була висота рядка, але вона ніяк не потрібна була лейблу. А в цьому випадку все по іншому. Коли пишеш лейблу висоту рядка, то виходить так, як по макету 
+        color: $light;
+        text-transform: uppercase;
+        letter-spacing: 0.33px;
+        margin-right: 12px;
+        max-width: 358px; 
+        // Якщо, наприклад, не стане кнопки, то краще, щоб цей інпут розширився на всю ширину форми, чи обмежувався шириною, утворюючи пустоту?
+        width: 100%;
     }
 
-    .social {
-        margin-top: initial;
+    &__input {
+        border: 1px solid $light-opacity-300;
+        padding: 16px;
+        border-radius: 4px;
+        margin-top: 19px;
+        background-color: $dark-800;
+        color: $light; //Через background не видно текст, який вводить користувач
+        width: 100%; 
+        transition: outline 0.4s;
+
+        &::placeholder {
+            transition: color 0.4s;
+            color: $light-opacity-600;
+            font-size: 16px;
+        }
+
+        &:hover::placeholder {
+            color: $accent;
+        }
+
+        &:focus {
+            outline: 1px solid $accent;
+            outline-offset: 4px;
+
+            &::placeholder {
+                color: $accent;
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 28px 10px 39px;
     }
 }

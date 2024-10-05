@@ -1,0 +1,15 @@
+<form class="footer__form">
+    <label class="footer__label">
+        subscribe
+        <input class="footer__input" type="email" name="e-mail" placeholder="E-mail" required>
+        <!-- Верстальники пишуть в атрибут name типу заглушку, а тоді вже бекендер реалізує , що буде відправлятися на форму? І коли потрібно буде реалізувати це на сайті, то на мені лежить відповідальність за те, щоб найти бекендера та залучити його до виконання цієї роботи? -->
+    </label>
+    <button class="button button--light footer__button" type="submit">
+        <!-- А якщо, наприклад, в мене змінюється тінь у 
+        кнопки, то я створюю модифікатор. А якщо плюс до цього мені потрібно змінити звонюшню поведінку, то треба ще дописувати локальний клас? Це через один клас можливо реалізувати? -->
+        Subscribe
+        <svg class="icon" width="24" height="24">
+            <use href="./images/sprite.svg#flower"></use>
+        </svg>
+    </button>
+</form>

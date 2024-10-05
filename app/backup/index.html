@@ -24,18 +24,17 @@
     <header class="header">
         <div class="container header__container">
             <nav class="menu">
-                <a class="logo logo-headerLight @@footerLogo" href="#">
-                    <!-- logo-headerLight @@footerLogo Чомусь ці назви появляються у вихідному файлі в хедері -->
+                <a class="logo" href="#">
                     <img class="logo__img" width="189" height="36" src="./images/logo-header.svg" alt="logo DolGuldur">
                 </a>
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link current" href="@@pageWorks.html">
+                        <span class="menu__link current">
                             Home
-                        </a>
+                        </span>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link @@currentWorks" href="works.html">
+                        <a class="menu__link" href="works.html">
                             Our Works
                         </a>
                     </li>
@@ -46,6 +45,7 @@
                     </li>
                 </ul>
             </nav>
+
             <ul class="header__list">
                 <li class="header__item">
                     <a class="header__link" href="mailto:info@dolguldur.com">
@@ -64,8 +64,10 @@
                     </a>
                 </li>
             </ul>
+
         </div>
     </header>
+
     <main class="main">
         <h1 class="visually-hidden">
             Website development by DolGuldur
@@ -84,9 +86,8 @@
                     <h2 class="hero__title">
                         Author's forge where your sites are created
                     </h2>
-                    <button class="button @@formButton" type="button" data-modal-open>
+                    <button class="button" type="button" data-modal-open>
                         Go to order
-                        <!-- А якщо, наприклад , в мене у футері є кнопка, яка має ікноку всередині. Як мені її підключити сюди? Це виходить потрібно робити іконку як компонент і тут підключити як змінну. Але ж іконка не є компонентом  -->
                     </button>
                 </div>
             </div>
@@ -107,7 +108,7 @@
                     </p>
                     <label class="form__label">
                         <span class="form__description">
-                            <!-- Тут легко можна обійтися без всяких спанів,записуючи стилі для тексту на лейбл, але дуже велику грає роль висота рядка для цього тесту,щоб відповідало макету.Тож прийшлося створювати  -->
+                            <!-- Тут легко можна обійтися без всяких спанів, але дуже велику грає роль висота рядка для цього тесту, тож прийшло створювати -->
                             Name
                         </span>
                         <input class="form__input" type="text" name="name" required>
@@ -148,21 +149,21 @@
                     </label>
                     <label class="checkbox form__checkbox">
                         <!-- Створив мікс класів, тому що в мене checkbox є блоком по BEM, тож він буде на сайті десь перевикористовуватися. Тож марджин, який я задав на label буде мішати в якомусь іншому місці на сайті. Тож я створюю іминно локальний клас, бо як ти вчив, що якщо нам потрібно змінити зовнішню поведінку елемента , то тільки через локальний клас  -->
-                        <input class="checkbox__input visually-hidden" type="checkbox" name="subscription" required>
+                        <input class="checkbox__input" type="checkbox" name="subscription" required>
                         <span class="checkbox__box">
                             <svg class="icon" width="10" height="8">
                                 <use href="./images/sprite.svg#checked"></use>
                             </svg>
                         </span>
                         <p class="checkbox__subscription">
-                            <!-- Можна була обійтися без обгортки, але коли тексту стає більше, то тоді це не як не підтримаєш -->
+                            <!-- Можна була обійтися без обгортки, але коли тексту стає
+                            більше, то тоді це не як не підтримаєш -->
                             I agree to the subscription and accept the <a class="checkbox__link" href="#"
                                 target="_blank">Terms of use</a>
                         </p>
                     </label>
-                    <button class="button form__button" type="submit" @@buttonModalOpen>
+                    <button class="button form__button" type="submit">
                         Submit
-                        <!-- А якщо, наприклад , в мене у футері є кнопка, яка має ікноку всередині. Як мені її підключити сюди? Це виходить потрібно робити іконку як компонент і тут підключити як змінну. Але ж іконка не є компонентом  -->
                     </button>
                 </form>
             </div>
@@ -338,7 +339,7 @@
                                 </p>
                                 <ul class="social">
                                     <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
                                             <svg class="icon icon--light" width="20" height="20">
                                                 <use href="./images/sprite.svg#instagram"></use>
                                             </svg>
@@ -348,7 +349,7 @@
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
                                             <svg class="icon icon--light" width="20" height="20">
                                                 <use href="./images/sprite.svg#twitter"></use>
                                             </svg>
@@ -358,7 +359,7 @@
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
                                             <svg class="icon icon--light" width="20" height="20">
                                                 <use href="./images/sprite.svg#facebook"></use>
                                             </svg>
@@ -368,7 +369,7 @@
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
                                             <svg class="icon icon--light" width="20" height="20">
                                                 <use href="./images/sprite.svg#linkedin"></use>
                                             </svg>
@@ -381,6 +382,7 @@
                             </div>
                         </article>
                     </li>
+
                     <li class="team__item">
                         <article class="team-card">
                             <img class="team-card__img" src="./images/team/Aldo.jpg" width="270" height="260"
@@ -394,7 +396,7 @@
                                 </p>
                                 <ul class="social">
                                     <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
                                             <svg class="icon icon--light" width="20" height="20">
                                                 <use href="./images/sprite.svg#instagram"></use>
                                             </svg>
@@ -404,7 +406,7 @@
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
                                             <svg class="icon icon--light" width="20" height="20">
                                                 <use href="./images/sprite.svg#twitter"></use>
                                             </svg>
@@ -414,7 +416,7 @@
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
                                             <svg class="icon icon--light" width="20" height="20">
                                                 <use href="./images/sprite.svg#facebook"></use>
                                             </svg>
@@ -424,7 +426,7 @@
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
                                             <svg class="icon icon--light" width="20" height="20">
                                                 <use href="./images/sprite.svg#linkedin"></use>
                                             </svg>
@@ -450,7 +452,7 @@
                                 </p>
                                 <ul class="social">
                                     <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
                                             <svg class="icon icon--light" width="20" height="20">
                                                 <use href="./images/sprite.svg#instagram"></use>
                                             </svg>
@@ -460,7 +462,7 @@
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
                                             <svg class="icon icon--light" width="20" height="20">
                                                 <use href="./images/sprite.svg#twitter"></use>
                                             </svg>
@@ -470,7 +472,7 @@
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
                                             <svg class="icon icon--light" width="20" height="20">
                                                 <use href="./images/sprite.svg#facebook"></use>
                                             </svg>
@@ -480,7 +482,7 @@
                                         </a>
                                     </li>
                                     <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
                                             <svg class="icon icon--light" width="20" height="20">
                                                 <use href="./images/sprite.svg#linkedin"></use>
                                             </svg>
@@ -566,12 +568,12 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__info">
                     <a class="logo logo--light footer__logo" href="#">
-                        <!-- logo--light footer__logo Чомусь ці назви появляються у вихідному файлі в хедері -->
                         <img class="logo__img" width="140" height="25" src="./images/logo-footer.svg"
                             alt="logo DolGuldur">
                     </a>
@@ -598,7 +600,6 @@
                         join
                     </span>
                     <ul class="social">
-                        <!-- Зробив тільки для футера. Тому що доступність не потрібно міняти, порівнюючи з team-card -->
                         <li class="social__item">
                             <a class="social__link social__link--dark" href="#" target="_blank"
                                 rel="noopener noreferrer">
@@ -645,15 +646,18 @@
                         </li>
                     </ul>
                 </div>
+
                 <form class="footer__form">
                     <label class="footer__label">
-                        subscribe
+                        <span class="footer__test">
+                            subscribe
+                        </span>
                         <input class="footer__input" type="email" name="e-mail" placeholder="E-mail" required>
                         <!-- Верстальники пишуть в атрибут name типу заглушку, а тоді вже бекендер реалізує , що буде відправлятися на форму? І коли потрібно буде реалізувати це на сайті, то на мені лежить відповідальність за те, щоб найти бекендера та залучити його до виконання цієї роботи? -->
                     </label>
                     <button class="button button--light footer__button" type="submit">
                         <!-- А якщо, наприклад, в мене змінюється тінь у 
-        кнопки, то я створюю модифікатор. А якщо плюс до цього мені потрібно змінити звонюшню поведінку, то треба ще дописувати локальний клас? Це через один клас можливо реалізувати? -->
+                        кнопки, то я створюю модифікатор. А якщо плюс до цього мені потрібно змінити звонюшню поведінку, то треба ще дописувати локальний клас? Це через один клас можливо реалізувати? -->
                         Subscribe
                         <svg class="icon" width="24" height="24">
                             <use href="./images/sprite.svg#flower"></use>

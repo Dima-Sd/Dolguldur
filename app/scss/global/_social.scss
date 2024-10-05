@@ -13,23 +13,17 @@
         height: 44px;
         background-color: $light;
         border-radius: 50%;
-
-        transition: background-color 0.4s, outline-offset 0.4s, box-shadow 0.4s;
+        color: $dark-light;
+        transition: background-color 0.4s, color 0.4s, outline 0.4s, box-shadow 0.4s;
 
         &--dark {
             background-color: $light-100;
-
-            .icon {
-                fill: $light;
-            }
+            color: $light;
         }
 
         &:hover {
             background-color: $accent;
-
-            .icon--light {
-                fill: $light;
-            }
+            color: $light;
         }
 
         &:focus {
@@ -38,12 +32,8 @@
         }
 
         &:active {
-            box-shadow: 4px 4px 4px $dark-opacity-250 inset;
+            box-shadow: inset 4px 4px 4px $dark-opacity-250;
             background-color: $accent;
-
-            .icon--light {
-                fill: $light;
-            }
         }
     }
 }

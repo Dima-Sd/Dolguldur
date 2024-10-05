@@ -1,0 +1,51 @@
+<form class="form">
+    <p class="form__text">
+        Tell about yourself and we will contact you
+    </p>
+    <label class="form__label">
+        <span class="form__description">
+            <!-- Тут легко можна обійтися без всяких спанів,записуючи стилі для тексту на лейбл, але дуже велику грає роль висота рядка для цього тесту,щоб відповідало макету.Тож прийшлося створювати  -->
+            Name
+        </span>
+        <input class="form__input" type="text" name="name" required>
+        <div class="form__box">
+            <svg class="icon" width="12" height="12">
+                <use href="./images/sprite.svg#user"></use>
+            </svg>
+        </div>
+    </label>
+    <label class="form__label">
+        <span class="form__description">
+            Phone
+        </span>
+        <input class="form__input" type="tel" name="number" required>
+        <div class="form__box">
+            <svg class="icon" width="13" height="13">
+                <use href="./images/sprite.svg#telephone"></use>
+            </svg>
+        </div>
+    </label>
+    <label class="form__label">
+        <span class="form__description">
+            E-mail
+        </span>
+        <input class="form__input" type="email" name="e-mail" required>
+        <div class="form__box">
+            <svg class="icon" width="15" height="12">
+                <use href="./images/sprite.svg#email"></use>
+            </svg>
+        </div>
+    </label>
+    <label class="form__label form__label-textarea">
+        <span class="form__description">
+            Message
+        </span>
+        <textarea class="form__input form__input--big" name="message" placeholder="Your message..." required></textarea>
+    </label>
+    @@include('small-components/checkbox.html')
+    @@include('small-components/button.html',{
+    "buttonText":"Submit",
+    "formButton":"form__button",
+    "buttonType":"submit"
+    })
+</form>

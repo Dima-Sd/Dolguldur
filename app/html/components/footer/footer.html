@@ -1,0 +1,23 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__info">
+                @@include('../global/small-components/logo.html', {
+                "width":"140",
+                "height":"25",
+                "logo":"logo-footer",
+                "logoLight":"logo--light",
+                "footerLogo":"footer__logo"
+                })
+                @@include('address.html')
+            </div>
+            <div class="footer__content">
+                <span class="footer__text">
+                    join
+                </span>
+                @@include('../global/social.html')
+            </div>
+            @@include('form.html')
+        </div>
+    </div>
+</footer>

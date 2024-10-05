@@ -41,13 +41,14 @@ body {
         outline-offset: 4px;
     }
 
-    //А чи можливо задати елементу тільки параметри тіні та зробити її прозорою, а при інтерактивному стані змінювати лише колір ?
     &:active {
         box-shadow: 4px 4px 4px 4px $dark-opacity-250;
     }
 
-    &--light:active {
-        box-shadow: 4px 4px 4px 4px $accent-opacity-700;
+    &--light {
+        &:active {
+            box-shadow: 4px 4px 4px 4px $accent-opacity-700;
+        }
     }
 }
 
@@ -62,14 +63,19 @@ body {
     border-radius: 4px;
     letter-spacing: 0.96px;
     padding: 10px 50px;
-    line-height: 1.8;
+    line-height: 1.9;
     font-weight: 700;
-    display: inline-block;
 
     transition: box-shadow 0.4s, outline 0.4s, outline-offset 0.4s;
 
     &:hover {
         box-shadow: 3px 3px 8px $dark-opacity-400;
+    }
+
+    &--light {
+        &:hover {
+            box-shadow: 3px 3px 8px $accent;
+        }
     }
 
     &:focus {
@@ -78,7 +84,7 @@ body {
     }
 
     &:active {
-        box-shadow: 3px 3px 8px $dark-opacity-400 inset;
+        box-shadow: inset 3px 3px 8px $dark-opacity-400;
     }
 }
 
@@ -91,6 +97,62 @@ body {
 }
 
 .icon {
-    transition: fill 0.4s;
-    fill: $dark-light;
+    fill: currentColor;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__input {
+        &:checked+.checkbox__box {
+            background-color: $accent;
+            border-color: transparent;
+        }
+
+        &:focus+.checkbox__box {
+            outline: 1px solid $accent;
+            outline-offset: 3px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        margin-right: 7px;
+        border-radius: 2px;
+        border: 1px solid $dark;
+        color: $light; //Тут звичайно спірний момент стосовно того, що я приховую іконку за допомогою кольору. Бо якщо наше модальне вікно буде іншого кольору, то вийде, що іконка буде вже не захована. Але якщо розробники будуть змінювати колір модалки, то в них не повинно бути труднощів, щоб під подібний колір підлаштують і саму іконку 
+        transition: background-color 0.2s, border-color 0.2s, outline 0.2s;
+    }
+
+    &__subscription {
+        line-height: 1.7;
+        color: $dark-light;
+        letter-spacing: 0.7px;
+    }
+
+    &__link {
+        color: $accent;
+        text-decoration: underline $accent;
+        border-radius: 2px;
+        transition: opacity 0.4s, outline 0.4s, box-shadow 0.4s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:focus {
+            outline: 1px solid $accent;
+            outline-offset: 2px;
+        }
+
+        &:active {
+            box-shadow: 4px 4px 9px $accent;
+        }
+    }
 }

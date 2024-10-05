@@ -14,26 +14,23 @@
         background-color: $light-600;
         border-radius: 4px;
         line-height: 1;
+        transition: background-color 0.4s, color 0.4s, outline 0.4s, outline-offset 0.4s, box-shadow 0.4s;
 
-        transition: background-color 0.4s, color 0.4s, outline 0.4s, outline-offset 0.4s, opacity 0.4s;
-
+        &:hover,
         &.mixitup-control-active {
-            background-color: $accent;
-            color: $light;
-        }
-
-        &:hover {
             background-color: $accent;
             color: $light;
         }
 
         &:focus {
             outline: 1px solid $accent;
-            outline-offset: 3px;
+            outline-offset: 4px;
         }
 
         &:active {
-            opacity: 0.7;
+            color: $light;
+            background-color: $accent;
+            box-shadow: inset 3px 3px 8px $dark-opacity-400;
         }
     }
 

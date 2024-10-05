@@ -18,20 +18,14 @@
         display: flex;
         align-items: center;
         gap: 10px;
-
         line-height: 1.2;
         letter-spacing: 0.28px;
         color: $dark-light;
-
         border-radius: 4px;
-        transition: color 0.4s, outline 0.4s, outline-offset 0.4s, opacity 0.4s;
+        transition: color 0.4s, outline 0.4s, opacity 0.4s;
 
         &:hover {
             color: $accent;
-
-            .icon {
-                fill: $accent;
-            }
         }
 
         &:focus {
@@ -60,9 +54,8 @@
         line-height: 1.1;
         padding: 20px 0;
         position: relative;
-
         border-radius: 4px;
-        transition: color 0.4s, outline 0.4s, outline-offset 0.4s, opacity 0.4s;
+        transition: color 0.4s, outline 0.4s, opacity 0.4s;
 
         &::before {
             content: "";
@@ -72,32 +65,20 @@
             background-color: transparent;
             border-radius: 2px;
             bottom: -9px;
-
             transition: background-color 0.4s;
         }
 
+        &:hover,
         &.current {
             color: $accent;
 
             &::before {
                 background-color: $accent;
             }
-
-            &:active {
-                color: $accent-opacity-700;
-
-                &::before {
-                    background-color: $accent-opacity-700;
-                }
-            }
         }
 
-        &:hover {
-            color: $accent;
-
-            &::before {
-                background-color: $accent;
-            }
+        &.current {
+            pointer-events: none;
         }
 
         &:focus {
@@ -106,8 +87,7 @@
         }
 
         &:active {
-            //Загалом змінюється тільки прозорість елемента, але коли ми будемо на місці користувача, то ми спочатку наведемо, а після того натиснемо і триматимемо курсор миші. В результаті вийде не по стайлгайду. Тож приходиться дописувати колір та приховувати підкреслення
-            color: $dark-opacity-500;
+            opacity: 0.5;
 
             &::before {
                 background-color: transparent;
