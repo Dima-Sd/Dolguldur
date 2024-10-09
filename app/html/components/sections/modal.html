@@ -1,0 +1,72 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal__close" type="button" data-modal-close>
+            <svg class="icon" width="16" height="16">
+                <use href="./images/sprite.svg#close"></use>
+            </svg>
+            <span class="visually-hidden">
+                close modal
+            </span>
+        </button>
+        <form class="form">
+            <p class="form__text">
+                Tell about yourself and we will contact you
+            </p>
+            <label class="form__label">
+                <span class="form__description">
+                    Name
+                </span>
+                <input class="form__input" type="text" name="name" required>
+                <div class="form__box">
+                    <svg class="icon" width="12" height="12">
+                        <use href="./images/sprite.svg#user"></use>
+                    </svg>
+                </div>
+            </label>
+            <label class="form__label">
+                <span class="form__description">
+                    Phone
+                </span>
+                <input class="form__input" type="tel" name="number" required>
+                <div class="form__box">
+                    <svg class="icon" width="13" height="13">
+                        <use href="./images/sprite.svg#telephone"></use>
+                    </svg>
+                </div>
+            </label>
+            <label class="form__label">
+                <span class="form__description">
+                    E-mail
+                </span>
+                <input class="form__input" type="email" name="e-mail" required>
+                <div class="form__box">
+                    <svg class="icon" width="15" height="12">
+                        <use href="./images/sprite.svg#email"></use>
+                    </svg>
+                </div>
+            </label>
+            <label class="form__label form__label-textarea">
+                <span class="form__description">
+                    Message
+                </span>
+                <textarea class="form__input form__input--big" name="message" placeholder="Your message..."
+                    required></textarea>
+            </label>
+            <label class="checkbox form__checkbox">
+                <input class="checkbox__input" type="checkbox" name="subscription" required>
+                <span class="checkbox__box">
+                    <svg class="icon" width="10" height="8">
+                        <use href="./images/sprite.svg#checked"></use>
+                    </svg>
+                </span>
+                <p class="checkbox__subscription">
+                    I agree to the subscription and accept the <a class="checkbox__link" href="#"
+                        target="_blank">Terms of use</a>
+                </p>
+            </label>
+            <button class="button form__button" type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>

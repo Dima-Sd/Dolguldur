@@ -7,44 +7,33 @@
     <title>
         Web company DolGuldur
     </title>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="images/favicons/site.webmanifest">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
-
+    @@include('../components/global/favicon.html')
+    @@include('../components/global/fonts.html')
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    @@include('../components/header/header.html', {
-    "currentIndex":"current",
-    "pageIndex":"works"
+    @@include('../components/header.html',{
+    "currentHome":"current",
     })
     <main class="main">
         <h1 class="visually-hidden">
             Website development by DolGuldur
         </h1>
-        @@include('../components/sections/slider.html')
-        <div class="container">
-            <div class="hero__content">
-                <h2 class="hero__title">
-                    Author's forge where your sites are created
-                </h2>
-                @@include('../components/global/small-components/button.html',{
-                "buttonText":"Go to order",
-                "buttonModalOpen":"data-modal-open",
-                "buttonType":"button"
-                })
+        <section class="hero">
+            @@include('../components/sections/slider.html')
+            <div class="container">
+                <div class="hero__content">
+                    <h2 class="hero__title">
+                        Author's forge where your sites are created
+                    </h2>
+                    <button class="button" type="button" data-modal-open>
+                        Go to order
+                    </button>
+                </div>
             </div>
-        </div>
+            @@include('../components/sections/modal.html')
         </section>
-        @@include('../components/global/modal.html')
-        <!-- Після взаємодії з кнопкою(Go to order) буде розташовуватися сама модалка -->
         <section class="advantages section">
             <div class="container">
                 <h2 class="visually-hidden">
@@ -147,36 +136,35 @@
                 </h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        @@include('../components/global/team-card.html',{
+                        @@include('../components/team-card.html',{
                         "img":"Paul",
+                        "alt":"Paul Castanie",
                         "name":"Paul Castanie",
                         "profession":"Product Designer",
-                        "accessibility":"Paul Castanie's"
                         })
                     </li>
                     <li class="team__item">
-                        @@include('../components/global/team-card.html',{
+                        @@include('../components/team-card.html',{
                         "img":"Joanna",
+                        "alt":"Joanna Nix",
                         "name":"Joanna Nix",
                         "profession":"Frontend Developer",
-                        "accessibility":"Joanna Nix's"
-
                         })
                     </li>
                     <li class="team__item">
-                        @@include('../components/global/team-card.html',{
+                        @@include('../components/team-card.html',{
                         "img":"Aldo",
+                        "alt":"Aldo Delara",
                         "name":"Aldo Delara",
                         "profession":"Marketing",
-                        "accessibility":"Aldo Delara's"
                         })
                     </li>
                     <li class="team__item">
-                        @@include('../components/global/team-card.html',{
+                        @@include('../components/team-card.html',{
                         "img":"Oladimeji",
+                        "alt":"Oladimeji Odunsi",
                         "name":"Oladimeji Odunsi",
                         "profession":"UI Designer",
-                        "accessibility":"Oladimeji Odunsi's"
                         })
                     </li>
                 </ul>
@@ -252,7 +240,8 @@
             </div>
         </section>
     </main>
-    @@include('../components/footer/footer.html')
+    @@include('../components/footer.html')
+
     <script src="js/main.min.js"></script>
 </body>
 

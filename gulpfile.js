@@ -1,15 +1,13 @@
-const { src, dest, watch, parallel } = require('gulp')
-
-const scss = require('gulp-sass')(require('sass'))
-const concat = require('gulp-concat')
-const autoprefixer = require('gulp-autoprefixer')
-const uglify = require('gulp-uglify-es').default
-const browserSync = require('browser-sync').create()
-const del = require('del')
-const include = require('gulp-file-include')
+const { src, dest, watch, parallel } = require('gulp');
+const scss = require('gulp-sass')(require('sass'));
+const concat = require('gulp-concat');
+const autoprefixer = require('gulp-autoprefixer');
+const uglify = require('gulp-uglify');
+const browserSync = require('browser-sync').create();
+const fileinclude = require('gulp-file-include');
 
 function styles() {
-    return src(['app/scss/style.scss'])
+    return src('app/scss/style.scss')
         .pipe(concat('style.min.css'))
         .pipe(scss({
             outputStyle: 'compressed'
@@ -19,7 +17,7 @@ function styles() {
             grid: true
         }))
         .pipe(dest('app/css'))
-        .pipe(browserSync.stream())
+        .pipe(browserSync.stream());
 }
 
 function scripts() {
@@ -27,63 +25,44 @@ function scripts() {
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/mixitup/dist/mixitup.js',
-        'app/js/main.js',
+        'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
 
         .pipe(dest('app/js'))
 
-        .pipe(browserSync.stream())
+        .pipe(browserSync.stream());
 }
 
 function htmlInclude() {
     return src('app/html/pages/*.html')
-        .pipe(include({
+        .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
         }))
         .pipe(dest('app'))
-        .pipe(browserSync.stream())
+        .pipe(browserSync.stream());
 }
-
-function CleanDist() {
-    return del('dist')
-}
-
-function build() {
-    return src([
-        'app/css/**/*.css',
-        'app/fonts/dist/**/*',
-        'app/images/dist/**/*', '!app/images/dist/**/*.svg',
-        'app/js/main.min.js',
-        'app/*.html'
-    ], { base: 'app' })
-
-        .pipe(dest('dist'))
-}
-
 
 function browsersync() {
     browserSync.init({
         server: {
             baseDir: 'app/'
-        }
+        },
+        notify: false
     })
 }
 
 function watching() {
-    watch(['app/scss/**/*.scss'], styles)
-    watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts)
-    watch(["app/*.html"]).on('change', browserSync.reload);
+    watch(['app/scss/**/*.scss'], styles);
+    watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
+    watch('app/html/**/*.html', htmlInclude);
 }
 
 exports.styles = styles
 exports.scripts = scripts
-exports.CleanDist = CleanDist
-exports.htmlInclude = htmlInclude
-
 exports.watching = watching
 exports.browsersync = browsersync
-exports.build = build
-exports.default = parallel(watching, browsersync, htmlInclude)
+exports.htmlInclude = htmlInclude
+exports.default = parallel(styles, scripts, watching, browsersync, htmlInclude)
