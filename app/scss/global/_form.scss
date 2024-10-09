@@ -1,7 +1,7 @@
 .form {
     text-align: center;
-
-    &__text {
+    
+    &__title {
         font-size: 20px;
         color: $dark-500;
         margin-bottom: 11px;
@@ -10,67 +10,56 @@
     }
 
     &__label {
-        display: flex;
-        flex-direction: column;
-        //  Велика відстань була між формою та текстом, який в лейблі, не дивлячись на те, що прописано стосовно стилів все правильно. Тож я зробив це через флекси, і тепер все окей
+        display: block;
         text-align: left;
-        gap: 4px;
         width: 100%;
         margin-bottom: 10px;
+        font-size: 12px;
+        color: $dark-light;
         position: relative;
     }
 
-    &__description {
-        font-size: 12px;
-        color: $dark-light;
-        line-height: 1.1;
-    }
-
     &__input {
-        padding: 6px 6px 10px 50px;
+        padding: 10px 6px 10px 50px;
         width: 100%;
         border-radius: 4px;
+        margin-top: 4px;
         outline: 1px solid $dark-opacity-200;
         transition: outline 0.4s;
 
-        &:hover+.form__box {
-            //Чи коректно робити це через сусідній елемент, коли ми прцюємо з непарним тегом?
+        &:hover+.form__icon {
             color: $accent-opacity-700;
+            pointer-events: none;
         }
 
         &:focus {
             outline-color: $accent;
-            &+.form__box {
+            &+.form__icon {
                 color: $accent;
             }
         }
     }
-    
-    &__box {
+
+    &__icon {
         position: absolute;
         left: 12px;
-        top: 50%;
-        width: 18px;
-        height: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        bottom: 14px;
         color: $dark-500;
         transition: color 0.4s;
     }
-    
+
     &__label-textarea {
         margin-bottom: 20px;
     }
-    
+
     &__input--big {
-        resize: vertical;
-        min-height: 120px;
-        max-height: 220px;
+        resize: none;
+        height: 120px;
         padding: 12px 16px;
 
         &::placeholder {
             color: $dark-light-opacity;
+            font-size: 14px;
             transition: color 0.4s;
         }
 
@@ -79,11 +68,71 @@
         }
     }
 
-    &__checkbox {
+    &__label-checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 30px;
+    }
+
+    &__checkbox {
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+        &:checked+.form__checkbox-fake {
+            background-color: $accent;
+            border-color: transparent;
+        }
+
+        &:focus+.form__checkbox-fake {
+            outline: 1px solid $accent;
+            outline-offset: 3px;
+        }
+    }
+
+    &__checkbox-fake {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        margin-right: 7px;
+        border-radius: 2px;
+        border: 1px solid $dark;
+        color: $light;
+        transition: background-color 0.2s, border-color 0.2s, outline 0.2s;
+    }
+
+    &__checkbox-subscription {
+        line-height: 1.7;
+        color: $dark-light;
+        letter-spacing: 0.7px;
+    }
+
+    &__subscription-link {
+        color: $accent;
+        text-decoration: underline $accent;
+        border-radius: 2px;
+        transition: opacity 0.4s, outline 0.4s, box-shadow 0.4s, text-decoration-color 0.4s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:focus {
+            outline: 1px solid $accent;
+            outline-offset: 2px;
+        }
+
+        &:active {
+            opacity: 0.7;
+            text-decoration-color: transparent;
+        }
     }
 
     &__button {
         padding: 10px 69px;
     }
 }
+
+

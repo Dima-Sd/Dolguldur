@@ -1,4 +1,3 @@
-// footer
 .footer {
     padding: 64px 0 60px;
     background-color: $dark-800;
@@ -71,13 +70,11 @@
 
     &__label {
         line-height: 1.2;
-        // Та форма, яка була в модалці, то там також була висота рядка, але вона ніяк не потрібна була лейблу. А в цьому випадку все по іншому. Коли пишеш лейблу висоту рядка, то виходить так, як по макету 
         color: $light;
         text-transform: uppercase;
         letter-spacing: 0.33px;
         margin-right: 12px;
         max-width: 358px; 
-        // Якщо, наприклад, не стане кнопки, то краще, щоб цей інпут розширився на всю ширину форми, чи обмежувався шириною, утворюючи пустоту?
         width: 100%;
     }
 
@@ -87,7 +84,7 @@
         border-radius: 4px;
         margin-top: 19px;
         background-color: $dark-800;
-        color: $light; //Через background не видно текст, який вводить користувач
+        color: $light;
         width: 100%; 
         transition: outline 0.4s;
 

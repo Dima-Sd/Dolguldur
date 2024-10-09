@@ -29,9 +29,7 @@ function scripts() {
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
-
         .pipe(dest('app/js'))
-
         .pipe(browserSync.stream());
 }
 

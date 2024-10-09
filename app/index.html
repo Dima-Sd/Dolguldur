@@ -43,7 +43,6 @@
                 </li>
             </ul>
         </nav>
-
         <ul class="header__list">
             <li class="header__item">
                 <a class="header__link" href="mailto:info@dolguldur.com">
@@ -90,6 +89,52 @@
             </div>
             <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+        <form class="form">
+            <h3 class="form__title">
+                Tell about yourself and we will contact you
+            </h3>
+            <label class="form__label" for="name">
+                Name
+                <input class="form__input" type="text" name="name" id="name" required>
+                <svg class="icon form__icon" width="12" height="12">
+                    <use href="./images/sprite.svg#user"></use>
+                </svg>
+            </label>
+            <label class="form__label" for="phone">
+                Phone
+                <input class="form__input" type="tel" name="number" id="phone" required>
+                <svg class="icon form__icon" width="13" height="13">
+                    <use href="./images/sprite.svg#telephone"></use>
+                </svg>
+            </label>
+            <label class="form__label" for="email">
+                E-mail
+                <input class="form__input" type="email" name="e-mail" id="email" required>
+                <svg class="icon form__icon" width="15" height="12">
+                    <use href="./images/sprite.svg#email"></use>
+                </svg>
+            </label>
+            <label class="form__label form__label-textarea" for="message">
+                Message
+                <textarea class="form__input form__input--big" name="message" id="message" placeholder="Your message..."
+                    required></textarea>
+            </label>
+            <label class="form__label-checkbox" for="subscription">
+                <input class="form__checkbox" type="checkbox" name="subscription" id="subscription" required>
+                <span class="form__checkbox-fake">
+                    <svg class="icon" width="10" height="8">
+                        <use href="./images/sprite.svg#checked"></use>
+                    </svg>
+                </span>
+                <p class="form__checkbox-subscription">
+                    I agree to the subscription and accept the <a class="form__subscription-link" href="#" target="_blank">Terms
+                        of use</a>
+                </p>
+            </label>
+            <button class="button form__button" type="submit">
+                Submit
+            </button>
+        </form>
         <button class="modal__close" type="button" data-modal-close>
             <svg class="icon" width="16" height="16">
                 <use href="./images/sprite.svg#close"></use>
@@ -98,66 +143,6 @@
                 close modal
             </span>
         </button>
-        <form class="form">
-            <p class="form__text">
-                Tell about yourself and we will contact you
-            </p>
-            <label class="form__label">
-                <span class="form__description">
-                    Name
-                </span>
-                <input class="form__input" type="text" name="name" required>
-                <div class="form__box">
-                    <svg class="icon" width="12" height="12">
-                        <use href="./images/sprite.svg#user"></use>
-                    </svg>
-                </div>
-            </label>
-            <label class="form__label">
-                <span class="form__description">
-                    Phone
-                </span>
-                <input class="form__input" type="tel" name="number" required>
-                <div class="form__box">
-                    <svg class="icon" width="13" height="13">
-                        <use href="./images/sprite.svg#telephone"></use>
-                    </svg>
-                </div>
-            </label>
-            <label class="form__label">
-                <span class="form__description">
-                    E-mail
-                </span>
-                <input class="form__input" type="email" name="e-mail" required>
-                <div class="form__box">
-                    <svg class="icon" width="15" height="12">
-                        <use href="./images/sprite.svg#email"></use>
-                    </svg>
-                </div>
-            </label>
-            <label class="form__label form__label-textarea">
-                <span class="form__description">
-                    Message
-                </span>
-                <textarea class="form__input form__input--big" name="message" placeholder="Your message..."
-                    required></textarea>
-            </label>
-            <label class="checkbox form__checkbox">
-                <input class="checkbox__input" type="checkbox" name="subscription" required>
-                <span class="checkbox__box">
-                    <svg class="icon" width="10" height="8">
-                        <use href="./images/sprite.svg#checked"></use>
-                    </svg>
-                </span>
-                <p class="checkbox__subscription">
-                    I agree to the subscription and accept the <a class="checkbox__link" href="#"
-                        target="_blank">Terms of use</a>
-                </p>
-            </label>
-            <button class="button form__button" type="submit">
-                Submit
-            </button>
-        </form>
     </div>
 </div>
         </section>
@@ -559,9 +544,8 @@
     <div class="container">
         <div class="footer__inner">
             <div class="footer__info">
-                <a class="logo logo--light footer__logo" href="#">
-                    <img class="logo__img" width="140" height="25" src="./images/logo-footer.svg"
-                        alt="logo DolGuldur">
+                <a class="logo footer__logo" href="#">
+                    <img class="logo__img" width="140" height="25" src="./images/logo-footer.svg" alt="logo DolGuldur">
                 </a>
                 <address class="footer__contacts">
                     <p class="footer__location">
@@ -587,8 +571,7 @@
                 </span>
                 <ul class="social">
                     <li class="social__item">
-                        <a class="social__link social__link--dark" href="#" target="_blank"
-                            rel="noopener noreferrer">
+                        <a class="social__link social__link--dark" href="#" target="_blank" rel="noopener noreferrer">
                             <svg class="icon" width="20" height="20">
                                 <use href="./images/sprite.svg#instagram"></use>
                             </svg>
@@ -598,8 +581,7 @@
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--dark" href="#" target="_blank"
-                            rel="noopener noreferrer">
+                        <a class="social__link social__link--dark" href="#" target="_blank" rel="noopener noreferrer">
                             <svg class="icon" width="20" height="20">
                                 <use href="./images/sprite.svg#twitter"></use>
                             </svg>
@@ -609,8 +591,7 @@
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--dark" href="#" target="_blank"
-                            rel="noopener noreferrer">
+                        <a class="social__link social__link--dark" href="#" target="_blank" rel="noopener noreferrer">
                             <svg class="icon" width="20" height="20">
                                 <use href="./images/sprite.svg#facebook"></use>
                             </svg>
@@ -620,8 +601,7 @@
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--dark" href="#" target="_blank"
-                            rel="noopener noreferrer">
+                        <a class="social__link social__link--dark" href="#" target="_blank" rel="noopener noreferrer">
                             <svg class="icon" width="20" height="20">
                                 <use href="./images/sprite.svg#linkedin"></use>
                             </svg>
@@ -632,15 +612,12 @@
                     </li>
                 </ul>
             </div>
-
             <form class="footer__form">
                 <label class="footer__label">
-                    <span class="footer__test">
-                        subscribe
-                    </span>
+                    subscribe
                     <input class="footer__input" type="email" name="e-mail" placeholder="E-mail" required>
                 </label>
-                <button class="button button--light footer__button" type="submit">
+                <button class="button footer__button" type="submit">
                     Subscribe
                     <svg class="icon" width="24" height="24">
                         <use href="./images/sprite.svg#flower"></use>
@@ -650,7 +627,6 @@
         </div>
     </div>
 </footer>
-
     <script src="js/main.min.js"></script>
 </body>
 

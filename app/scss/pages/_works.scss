@@ -14,12 +14,16 @@
         background-color: $light-600;
         border-radius: 4px;
         line-height: 1;
-        transition: background-color 0.4s, color 0.4s, outline 0.4s, outline-offset 0.4s, box-shadow 0.4s;
+        transition:color 0.4s, background-color 0.4s, box-shadow 0.4s, outline 0.4s;
 
         &:hover,
         &.mixitup-control-active {
-            background-color: $accent;
             color: $light;
+            background-color: $accent;
+        }
+
+        &:hover {
+            box-shadow: 3px 3px 8px $dark-opacity-400;
         }
 
         &:focus {
