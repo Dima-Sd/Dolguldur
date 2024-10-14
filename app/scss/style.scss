@@ -2,36 +2,15 @@
 @import "../../node_modules/slick-carousel/slick/slick.css";
 @import "vars";
 @import "global";
-
-// Порядок підключення повинен бути таким:
-// global
 @import "global/header";
-@import "pages/hero";
+@import "global/mobile-menu";
+@import "sections/hero";
 @import "global/modal";
 @import "global/form";
-@import "global/team-card";
+@import "sections/advantages";
+@import "sections/services";
+@import "sections/team";
 @import "global/social";
-@import "global/work-card";
+@import "sections/partners";
 @import "global/footer";
-
-// pages
-@import "pages/advantages";
-@import "pages/services";
-@import "pages/team";
-@import "pages/partners";
-@import "pages/works";
-
-// // Чи все разом:
-// @import "global/header";
-// @import "pages/hero";
-// @import "global/modal";
-// @import "global/form";
-// @import "pages/advantages";
-// @import "pages/services";
-// @import "pages/team";
-// @import "pages/partners";
-// @import "pages/works";
-// @import "global/footer";
-
-// @import "pages/works";
-// @import "global/work-card";
+@import "sections/works";

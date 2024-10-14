@@ -1,6 +1,14 @@
 .header {
     border-bottom: 1px solid $light-800;
-    padding: 22px 0;
+    padding: 8px 0;
+
+    @media(min-width:768px) {
+        padding: 20px 0;
+    }
+
+    @media(min-width:1200px) {
+        padding: 22px 0;
+    }
 
     &__container {
         display: flex;
@@ -10,8 +18,30 @@
     }
 
     &__list {
-        display: flex;
-        gap: 44px;
+        display: none;
+
+        @media(min-width:768px) {
+            display: block;
+        }
+
+        @media(min-width:1200px) {
+            display: flex;
+            gap: 45px;
+        }
+    }
+
+    &__item {
+        @media(min-width:768px) {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media(min-width:1200px) {
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__link {
@@ -45,8 +75,12 @@
     gap: 89px;
 
     &__list {
-        display: flex;
-        gap: 50px;
+        display: none;
+
+        @media(min-width:768px) {
+            display: flex;
+            gap: 50px;
+        }
     }
 
     &__link {
@@ -91,6 +125,78 @@
 
             &::before {
                 background-color: transparent;
+            }
+        }
+    }
+}
+
+.mobile-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    margin-right: -4px;
+    transition: outline 0.4s, box-shadow 0.4s, background-color 0.4s;
+
+    @media(min-width:768px) {
+        display: none;
+    }
+
+    &__line {
+        width: 26px;
+        height: 3px;
+        border-radius: 3px;
+        background-color: $dark-light;
+        position: relative;
+        transition: background-color 0.4s;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            border-radius: 3px;
+            background-color: $dark-light;
+            transition: background-color 0.4s;
+        }
+
+        &::before {
+            top: 7px;
+        }
+
+        &::after {
+            bottom: 7px;
+        }
+    }
+
+    &:hover {
+        .mobile-button__line {
+            background-color: $accent;
+
+            &::before,
+            &::after {
+                background-color: $accent;
+            }
+        }
+    }
+
+    &:focus {
+        outline: 1px solid $accent;
+    }
+
+    &:active {
+        box-shadow: inset 3px 3px 3px $dark-opacity-120;
+
+        .mobile-button__line {
+            background-color: $accent;
+
+            &::before,
+            &::after {
+                background-color: $accent;
             }
         }
     }

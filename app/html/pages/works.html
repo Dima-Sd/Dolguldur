@@ -14,13 +14,14 @@
 
 <body>
     @@include('../components/header.html',{
-    "currentWorks":"current",
+    "currentWorks":"current"
     })
     <main class="main">
         <h1 class="visually-hidden">
             Works of the DolGuldur company
         </h1>
-        <section class="works section">
+        @@include('../components/modal.html')
+        <!-- <section class="works section">
             <div class="container">
                 <ul class="works__list">
                     <li class="works__item">
@@ -54,7 +55,7 @@
                         @@include('../components/work-card.html',{
                         "img":"laptop",
                         "alt":"on the table are user devices and a laptop with a website about the world of sofas",
-                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco consequat.",
                         "title":"Sofa World",
                         "category":"Web-site"
                         })
@@ -63,7 +64,7 @@
                         @@include('../components/work-card.html',{
                         "img":"cardboard-cup",
                         "alt":"a cardboard cup with a picture of Moby Dick coffee on it",
-                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco consequat.",
                         "title":"Moby Dick Caffe",
                         "category":"Brand"
                         })
@@ -72,7 +73,7 @@
                         @@include('../components/work-card.html',{
                         "img":"tesla",
                         "alt":"tesla logo on a red background",
-                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco consequat.",
                         "title":"Tesla charger-map",
                         "category":"App"
                         })
@@ -81,7 +82,7 @@
                         @@include('../components/work-card.html',{
                         "img":"girl",
                         "alt":"a woman sitting on a pier near the water",
-                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco consequat.",
                         "title":"Bronze Sky",
                         "category":"Design"
                         })
@@ -90,7 +91,7 @@
                         @@include('../components/work-card.html',{
                         "img":"magazine",
                         "alt":"A magazine called Cereal Travel with a camera next to it",
-                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco consequat.",
                         "title":"Cereal Travel Magazine",
                         "category":"Design"
                         })
@@ -99,7 +100,7 @@
                         @@include('../components/work-card.html',{
                         "img":"telephone",
                         "alt":"the user is holding a phone with the stock photo bank application on it",
-                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco consequat.",
                         "title":"Photonium",
                         "category":"App"
                         })
@@ -108,7 +109,7 @@
                         @@include('../components/work-card.html',{
                         "img":"keep-exploring",
                         "alt":"a woman shows a motivational flag while on a mountain",
-                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco consequat.",
                         "title":"keep Exploring",
                         "category":"Brand"
                         })
@@ -117,7 +118,7 @@
                         @@include('../components/work-card.html',{
                         "img":"museum",
                         "alt":"The Natural History Museum, located in London",
-                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco consequat.",
                         "title":"Architectural conceptual projects",
                         "category":"Design"
                         })
@@ -126,16 +127,16 @@
                         @@include('../components/work-card.html',{
                         "img":"food-service",
                         "alt":"a laptop with an interior design website",
-                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consequat.",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco consequat.",
                         "title":"Le Buzz food service",
                         "category":"Web-site"
                         })
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
-    @@include('../components/footer.html')
+    <!-- @@include('../components/footer.html') -->
     <script src="js/main.min.js"></script>
 </body>
 

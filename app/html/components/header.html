@@ -6,7 +6,7 @@
             </a>
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a class="menu__link @@currentHome" href="index.html">
+                    <a class="menu__link @@currentIndex" href="index.html">
                         Home
                     </a>
                 </li>
@@ -40,5 +40,14 @@
                 </a>
             </li>
         </ul>
+        <button class="mobile-button" data-menu-button>
+            <span class="mobile-button__line">
+                <span class="visually-hidden">
+                    open the mobile menu
+                </span>
+            </span>
+        </button>
+        @@include('mobile-menu.html')
+        <!--Підкажи, будь ласка, як мені за допомогою інклюда зробити так, щоб на хедер(мобільної версії) підставлявся клас current відповідно на ту сторінку, на якій користувач перебуває ?      -->
     </div>
 </header>

@@ -14,26 +14,26 @@
 
 <body>
     @@include('../components/header.html',{
-    "currentHome":"current",
+    "currentIndex":"current"
     })
     <main class="main">
         <h1 class="visually-hidden">
             Website development by DolGuldur
         </h1>
         <section class="hero">
-            @@include('../components/sections/slider.html')
+            @@include('../components/slider.html')
             <div class="container">
                 <div class="hero__content">
                     <h2 class="hero__title">
-                        Author's forge where your sites are created
+                        Author's forge where <br> your sites are created
                     </h2>
                     <button class="button" type="button" data-modal-open>
                         Go to order
                     </button>
                 </div>
             </div>
-            @@include('../components/sections/modal.html')
-        </section>
+            @@include('../components/modal.html')
+        <!-- </section>
         <section class="advantages section">
             <div class="container">
                 <h2 class="visually-hidden">
@@ -238,9 +238,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
-    @@include('../components/footer.html')
+    <!-- @@include('../components/footer.html') -->
     <script src="js/main.min.js"></script>
 </body>
 
