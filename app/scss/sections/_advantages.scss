@@ -7,8 +7,21 @@
     }
 
     &__item {
-        max-width: 270px;
         width: 100%;
+
+        @media(min-width:480px) {
+            //В нас по замовчуванню айтем займає всю ширину батька. Але якщо не змінювати цю ширину, і тянуть екран до 768px, то айтем дуже сильно розтягнеться. Тож я обмежив цю ширину 
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        @media(min-width:768px) {
+            width: 47%;
+        }
+
+        @media(min-width:1200px) {
+            max-width: 270px;
+        }
     }
 
     &__box {
@@ -24,10 +37,15 @@
     }
 
     &__subtitle {
+        text-align: center;
         text-transform: uppercase;
         font-weight: 700;
         line-height: 1.2;
         margin-bottom: 9px;
+
+        @media(min-width:768px) {
+            text-align: left;
+        }
     }
 
     &__text {

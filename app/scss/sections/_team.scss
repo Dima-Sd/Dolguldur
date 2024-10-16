@@ -7,5 +7,18 @@
         justify-content: center;
         gap: 30px;
     }
+
+    &__item {
+        width: 100%;
+
+        @media(min-width:768px) {
+            width: 47%;
+        }
+
+        @media(min-width:1200px) {
+            width: initial;
+        }
+    }
 }
+
 @import "team-card";

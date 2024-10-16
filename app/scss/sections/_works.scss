@@ -1,10 +1,19 @@
 .works {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__list {
+        margin: 0 auto 40px;
+        flex-grow: 1;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 50px;
+        gap: 15px 10px;
+
+        @media(min-width:1200px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__button {
@@ -14,7 +23,7 @@
         background-color: $light-600;
         border-radius: 4px;
         line-height: 1;
-        transition:color 0.4s, background-color 0.4s, box-shadow 0.4s, outline 0.4s;
+        transition: color 0.4s, background-color 0.4s, box-shadow 0.4s, outline 0.4s;
 
         &:hover,
         &.mixitup-control-active {
@@ -40,9 +49,20 @@
 
     &__card-list {
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
+    }
+
+    &__card-item {
+        width: 100%;
+
+        @media(min-width:768px) {
+            width: 47%;
+        }
+
+        @media(min-width:1200px) {
+            width: initial;
+        }
     }
 }
 

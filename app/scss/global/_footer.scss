@@ -1,16 +1,39 @@
 .footer {
-    padding: 64px 0 60px;
+    padding: 60px 0;
     background-color: $dark-800;
+
+    @media(min-width:1200px) {
+        padding: 64px 0 60px;
+    }
 
     &__inner {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: flex-start;
+
+        @media(min-width:320px) {
+            text-align: center;
+            gap: 60px;
+        }
+
+        @media(min-width:768px) {
+            justify-content: space-around;
+        }
+
+        @media(min-width:1200px) {
+            gap: 0;
+            text-align: left;
+        }
     }
 
     &__info {
         max-width: 250px;
         width: 100%;
-        margin-right: 51px;
+
+        @media(min-width:1200px) {
+            margin-right: 51px;
+        }
     }
 
     &__logo {
@@ -50,7 +73,10 @@
     &__content {
         max-width: 206px;
         width: 100%;
-        margin-right: 93px;
+
+        @media(min-width:1200px) {
+            margin-right: 93px;
+        }
     }
 
     &__text {
@@ -64,8 +90,15 @@
     &__form {
         display: flex;
         align-items: flex-end;
-        max-width: 570px;
+        flex-direction: column;
+        max-width: 450px;
         width: 100%;
+        gap: 20px 12px;
+
+        @media(min-width:1200px) {
+            flex-direction: row;
+            max-width: 570px;
+        }
     }
 
     &__label {
@@ -73,9 +106,13 @@
         color: $light;
         text-transform: uppercase;
         letter-spacing: 0.33px;
-        margin-right: 12px;
-        max-width: 358px; 
+        max-width: 450px;
         width: 100%;
+        margin: 0 auto;
+
+        @media(min-width:1200px) {
+            max-width: 358px;
+        }
     }
 
     &__input {
@@ -85,7 +122,7 @@
         margin-top: 19px;
         background-color: $dark-800;
         color: $light;
-        width: 100%; 
+        width: 100%;
         transition: outline 0.4s;
 
         &::placeholder {
@@ -111,6 +148,7 @@
     &__button {
         display: flex;
         align-items: center;
+        margin: 0 auto;
         gap: 20px;
         padding: 10px 28px 10px 39px;
     }

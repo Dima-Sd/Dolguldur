@@ -25,9 +25,10 @@
 }
 
 .modal {
-    max-width: 528px;
+    max-width: 450px;
     width: 100%;
-    padding: 40px;
+    padding: 40px 25px;
+    margin: 0 15px;
     background-color: $light;
     box-shadow: 8px 8px 3px $dark-opacity-120;
     transform: scale(1);
@@ -35,12 +36,21 @@
     border-radius: 6px;
     transition: transform 0.5s;
 
+    @media(min-width:480px) {
+        padding: 40px;
+        margin: 0;
+    }
+
+    @media(min-width:1200px) {
+        max-width: 528px;
+    }
+
     &__close {
+        right: 5px;
+        top: 5px;
+        width: 35px;
+        height: 35px;
         position: absolute;
-        right: 8px;
-        top: 8px;
-        width: 44px;
-        height: 44px;
         border-radius: 50%;
         outline: 1px solid $dark-opacity-100;
         display: flex;
@@ -59,6 +69,13 @@
         &:active {
             box-shadow: inset 3px 3px 3px $dark-opacity-120;
             color: $accent;
+        }
+
+        @media(min-width:480px) {
+            right: 8px;
+            top: 8px;
+            width: 44px;
+            height: 44px;
         }
     }
 }
