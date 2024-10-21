@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" data-header>
     <div class="container header__container">
         <nav class="menu">
             <a class="logo" href="index.html">
@@ -42,6 +42,67 @@
                     </a>
                 </li>
             </ul>
+            <button class="mobile-button" type="button" data-menu-button>
+                <span class="visually-hidden">
+                    open/close the mobile menu
+                </span>
+                <span class="mobile-button__line">
+                </span>
+            </button>
+            <div class="mobile-menu" data-menu>
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link current" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link @@currentWorks" href="works.html">
+                            Our Works
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__link" href="#">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+                <!-- Тут обгортка була потрібрна для того, щоб space-between не робив простір між списками з контактами та соціальними мережами -->
+                <ul class="mobile-menu__contact">
+                    <li class="mobile-menu__contact-item">
+                        <a class="mobile-menu__contact-link" href="tel:+380961111111">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="mobile-menu__contact-item">
+                        <a class="mobile-menu__contact-link" href="mailto:info@dolguldur.com">
+                            info@dolguldur.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mobile-social">
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="#">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="#">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="#">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="#">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <ul class="header__list">
             <li class="header__item">
@@ -61,79 +122,6 @@
                 </a>
             </li>
         </ul>
-        <button class="mobile-button" data-menu-button>
-            <span class="mobile-button__line">
-                <span class="visually-hidden">
-                    open the mobile menu
-                </span>
-            </span>
-        </button>
-        <div class="mobile-menu" data-menu>
-    <nav class="mobile-menu__navigation">
-        <ul class="mobile-menu__list">
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="index.html">
-                    Home
-                </a>
-            </li>
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="works.html">
-                    Our Works
-                </a>
-            </li>
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="#">
-                    Contacts
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <div class="mobile-menu__inner">
-        <ul class="mobile-menu__contact">
-            <li class="mobile-menu__contact-item">
-                <a class="mobile-menu__contact-link" href="tel:+380961111111">
-                    +38 096 111 11 11
-                </a>
-            </li>
-            <li class="mobile-menu__contact-item">
-                <a class="mobile-menu__contact-link" href="mailto:info@dolguldur.com">
-                    info@dolguldur.com
-                </a>
-            </li>
-        </ul>
-        <ul class="mobile-social">
-            <li class="mobile-social__item">
-                <a class="mobile-social__link" href="#">
-                    Instagram
-                </a>
-            </li>
-            <li class="mobile-social__item">
-                <a class="mobile-social__link" href="#">
-                    Twitter
-                </a>
-            </li>
-            <li class="mobile-social__item">
-                <a class="mobile-social__link" href="#">
-                    Facebook
-                </a>
-            </li>
-            <li class="mobile-social__item">
-                <a class="mobile-social__link" href="#">
-                    LinkedIn
-                </a>
-            </li>
-        </ul>
-    </div>
-    <button class="mobile-menu__close" data-menu-button>
-        <svg class="icon" width="22" height="22">
-            <use href="./images/sprite.svg#mobile-close"></use>
-        </svg>
-        <span class="visually-hidden">
-            close the mobile menu
-        </span>
-    </button>
-</div>
-        <!--Підкажи, будь ласка, як мені за допомогою інклюда зробити так, щоб на хедер(мобільної версії) підставлявся клас current відповідно на ту сторінку, на якій користувач перебуває ?      -->
     </div>
 </header>
     <main class="main">

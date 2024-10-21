@@ -8,15 +8,6 @@
     border-radius: 0px 0px 4px 4px;
     text-align: center;
 
-    @media(min-width:480px) {
-        max-width: 450px;
-        margin: 0 auto;
-    }
-
-    @media(min-width:1200px) {
-        max-width: 270px;
-    }
-
     &__img {
         width: 100%;
         height: auto;

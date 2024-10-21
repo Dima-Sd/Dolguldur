@@ -2,16 +2,14 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10;
     width: 100vw;
     height: 100vh;
-    padding: 50px 25px;
     background-color: $light;
-    z-index: 15;
-    letter-spacing: 0.50px;
+    padding: 50px 40px;
     line-height: 1.2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     transform: translateX(-150%);
     transition: transform 0.4s;
 
@@ -19,43 +17,43 @@
         transform: translateX(0);
     }
 
-    @media(min-width:480px) {
-        padding: 50px 40px;
+    @media (min-width: 768px) {
+        display: none;
     }
 
     &__list {
-        margin-bottom: 30px;
+        margin-bottom: 18px;
 
-        @media(min-width:480px) {
-            margin-bottom: 35px;
+        @media (min-width: 480px) {
+            margin-bottom: 30px;
         }
 
-        @media(min-width:320px) and (orientation:landscape) {
-            margin-bottom: 15px;
+        @media (orientation: landscape) {
+            margin-bottom: 5px;
         }
     }
 
-    &__item {
-        &:not(:last-child) {
-            margin-bottom: 20px;
+    &__item:not(:last-child) {
+        margin-bottom: 10px;
 
-            @media(min-width:480px) {
-                margin-bottom: 32px;
-            }
+        @media (min-width: 480px) {
+            margin-bottom: 24px;
+        }
 
-            @media(min-width:320px) and (orientation:landscape) {
-                margin-bottom: 0;
-            }
+        @media (orientation: landscape) {
+            margin-bottom: 0;
         }
     }
 
     &__link {
         display: block;
-        font-size: 40px;
         border-radius: 4px;
-        transition: color 0.4s, outline 0.4s, opacity 0.4s;
+        font-size: 40px;
+        padding: 4px 0;
+        transition: color 0.3s, outline 0.3s, opacity 0.3s;
 
-        &:hover {
+        &:hover,
+        &.current {
             color: $accent;
         }
 
@@ -67,43 +65,34 @@
             opacity: 0.7;
         }
 
-        @media(min-width:320px) and (orientation:landscape) {
+        @media (orientation: landscape) {
             font-size: 28px;
-            padding: 4px 0;
+            padding: 8px 0;
         }
     }
 
     &__contact {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        margin-top: auto;
 
-        @media(min-width:480px) {
-            margin-bottom: 50px;
+        @media (min-width: 480px) {
+            margin-bottom: 26px;
         }
 
-        @media(min-width:320px) and (orientation:landscape) {
-            margin-bottom: 10px;
-        }
-    }
-
-    &__contact-item {
-        &:not(:last-child) {
-            @media(min-width:480px) {
-                margin-bottom: 22px;
-            }
-
-            @media(min-width:320px) and (orientation:landscape) {
-                margin-bottom: 0;
-            }
+        @media (orientation: landscape) {
+            display: flex;
+            margin-bottom: 5px;
+            margin-left: -8px;
         }
     }
 
     &__contact-link {
         display: block;
-        font-size: 27px;
-        color: $dark-light;
+        font-size: 25px;
         padding: 8px 0;
+        color: $dark-light;
         border-radius: 4px;
-        transition: color 0.4s, outline 0.4s, opacity 0.4s;
+        transition: color 0.3s, outline 0.3s, opacity 0.3s;
 
         &:hover {
             color: $accent;
@@ -117,41 +106,14 @@
             opacity: 0.6;
         }
 
-        @media(min-width:480px) {
+        @media (min-width: 480px) {
             font-size: 32px;
-            padding: 4px 0;
+            padding: 10px 0;
         }
 
-        @media(min-width:320px) and (orientation:landscape) {
-            font-size: 20px;
-            padding: 4px 0;
-        }
-    }
-
-    &__close {
-        position: absolute;
-        width: 44px;
-        height: 44px;
-        top: 10px;
-        right: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $dark-light;
-        border-radius: 50%;
-        transition: color 0.4s, outline 0.4s, box-shadow 0.4s;
-
-        &:hover {
-            color: $accent;
-        }
-
-        &:focus {
-            outline: 1px solid $accent;
-        }
-
-        &:active {
-            box-shadow: inset 3px 3px 3px $dark-opacity-120;
-            color: $accent;
+        @media (orientation: landscape) {
+            padding: 10px;
+            font-size: 22px;
         }
     }
 }
@@ -159,13 +121,26 @@
 .mobile-social {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 13px;
     margin-left: -10px;
 
-    &__item {
-        position: relative;
+    &__item:last-child {
+        .mobile-social__link::after {
+            width: 0;
+        }
+    }
 
-        &:not(:last-child)::after {
+    &__link {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 500;
+        color: $accent;
+        padding: 12px 10px;
+        position: relative;
+        border-radius: 4px;
+        text-decoration: underline transparent;
+        transition: text-decoration-color 0.3s, outline 0.3s, opacity 0.3;
+
+        &::after {
             content: "";
             position: absolute;
             width: 1px;
@@ -173,16 +148,6 @@
             right: 0;
             background-color: $dark-opacity-200;
         }
-    }
-
-    &__link {
-        padding: 5px 10px;
-        color: $accent;
-        font-weight: 500;
-        font-size: 18px;
-        text-decoration: underline transparent;
-        border-radius: 2px;
-        transition: text-decoration-color 0.4s, outline 0.4s, opacity 0.4s;
 
         &:hover {
             text-decoration-color: $accent;
@@ -194,15 +159,6 @@
 
         &:active {
             opacity: 0.7;
-        }
-
-        @media(min-width:480px) {
-            padding: 14px 10px;
-        }
-
-        @media(min-width:320px) and (orientation:landscape) {
-            font-size: 16px;
-            padding: 5px 10px;
         }
     }
 }

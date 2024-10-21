@@ -1,59 +1,78 @@
 .footer {
-    padding: 60px 0;
     background-color: $dark-800;
+    padding: 60px 0;
 
-    @media(min-width:1200px) {
+    @media (min-width: 1200px) {
         padding: 64px 0 60px;
     }
 
     &__inner {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 45px;
 
-        @media(min-width:320px) {
-            text-align: center;
-            gap: 60px;
-        }
-
-        @media(min-width:768px) {
+        @media (min-width: 768px) {
             justify-content: space-around;
         }
 
-        @media(min-width:1200px) {
+        @media (min-width: 1200px) {
+            justify-content: space-between;
             gap: 0;
             text-align: left;
         }
     }
 
     &__info {
-        max-width: 250px;
         width: 100%;
 
-        @media(min-width:1200px) {
-            margin-right: 51px;
+        @media (min-width: 768px) {
+            width: 40%;
+            // Написав у відсотках, тому що блоки під назвою "info" та "content" не дотягують до ширини 1200 і перекидаються.
+        }
+
+        @media (min-width: 1200px) {
+            margin-right: 50px;
+            max-width: 250px;
         }
     }
 
     &__logo {
         display: inline-block;
-        margin-bottom: 22px;
-    }
+        padding: 10px;
 
-    &__item:not(:last-child) {
-        margin-bottom: 9px;
+        @media (min-width: 1200px) {
+            padding: 0;
+            margin-bottom: 22px;
+        }
     }
 
     &__location {
         color: $light;
-        margin-bottom: 9px;
+        letter-spacing: 0.55px;
+        margin-bottom: 4px;
+
+        @media (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
+    }
+
+    &__item {
+        @media (min-width: 1200px) {
+            &:not(:last-child) {
+                margin-bottom: 9px;
+            }
+        }
     }
 
     &__link {
+        display: block;
         color: $secondary;
         border-radius: 4px;
-        transition: color 0.4s, outline 0.4s, outline 0.4s, opacity 0.4s;
+        padding: 4px 0;
+        transition: color 0.4s, outline 0.4s, opacity 0.4s;
 
         &:hover {
             color: $accent;
@@ -71,11 +90,15 @@
     }
 
     &__content {
-        max-width: 206px;
         width: 100%;
 
-        @media(min-width:1200px) {
-            margin-right: 93px;
+        @media (min-width: 768px) {
+            width: 40%;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 206px;
+            margin-right: 94px;
         }
     }
 
@@ -83,52 +106,49 @@
         display: inline-block;
         color: $light;
         text-transform: uppercase;
-        margin-bottom: 19px;
+        letter-spacing: 0.55px;
         line-height: 1.2;
+        margin-bottom: 19px;
     }
 
     &__form {
         display: flex;
         align-items: flex-end;
         flex-direction: column;
-        max-width: 450px;
-        width: 100%;
         gap: 20px 12px;
+        width: 100%;
 
-        @media(min-width:1200px) {
+        @media (min-width: 480px) {
+            max-width: 450px;
+        }
+
+        @media (min-width: 1200px) {
             flex-direction: row;
             max-width: 570px;
         }
     }
 
     &__label {
-        line-height: 1.2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
         color: $light;
         text-transform: uppercase;
-        letter-spacing: 0.33px;
-        max-width: 450px;
-        width: 100%;
-        margin: 0 auto;
-
-        @media(min-width:1200px) {
-            max-width: 358px;
-        }
+        letter-spacing: 0.55px;
     }
 
     &__input {
-        border: 1px solid $light-opacity-300;
-        padding: 16px;
-        border-radius: 4px;
-        margin-top: 19px;
-        background-color: $dark-800;
-        color: $light;
         width: 100%;
-        transition: outline 0.4s;
+        margin-top: 19px;
+        border-radius: 4px;
+        outline: 1px solid $light-opacity-300;
+        padding: 15px 16px;
+        transition: outline 0.4s, outline-offset 0.4s;
 
         &::placeholder {
-            transition: color 0.4s;
             color: $light-opacity-600;
             font-size: 16px;
+            transition: color 0.4s;
         }
 
         &:hover::placeholder {
@@ -148,8 +168,8 @@
     &__button {
         display: flex;
         align-items: center;
-        margin: 0 auto;
         gap: 20px;
         padding: 10px 28px 10px 39px;
+        margin: 0 auto;
     }
 }

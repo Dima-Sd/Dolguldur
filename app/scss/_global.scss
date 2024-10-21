@@ -28,6 +28,12 @@ body {
     overflow: hidden;
 }
 
+.no-scroll {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
 .logo {
     border-radius: 4px;
     transition: opacity 0.4s, outline 0.4s;
@@ -52,6 +58,14 @@ body {
         @media(min-width:1200px) {
             width: 189px;
         }
+    }
+}
+
+.main {
+    padding-top: 60px;
+
+    @media (min-width: 768px) {
+        padding-top: 80px;
     }
 }
 

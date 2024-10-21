@@ -3,14 +3,18 @@
     position: relative;
     max-width: 1600px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 118px 0;
 
-    @media(min-width:480px) {//Якщо перша картинка в слайдері трохи не збігається з макетом, це може вважатися помилкою ?
-        padding: 118px 0;
-    }
+    @media (orientation: landscape) {
+        padding: 60px 0;
 
-    @media(min-width:1200px) {
-        padding: 203px 0;
+        @media (min-width: 768px) {
+            padding: 120px 0;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 203px 0;
+        }
     }
 
     &::before {
@@ -72,14 +76,18 @@
         margin-bottom: 38px;
         line-height: 1.6;
 
-        @media(min-width:768px) {
+        @media (min-width:768px) {
             margin-bottom: 35px;
         }
 
-        @media(min-width:1200px) {
+        @media (min-width:1200px) {
             line-height: 1.3;
             margin-bottom: 30px;
             font-size: 44px;
+        }
+
+        @media (orientation: landscape) {
+            margin-bottom: 25px;
         }
     }
 }

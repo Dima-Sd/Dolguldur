@@ -5,20 +5,38 @@
     }
 
     &__list {
-        margin: 0 auto 40px;
-        flex-grow: 1;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px 10px;
+        margin-bottom: 40px;
+
+        @media (min-width: 480px) {
+            margin: 0 auto 40px;
+            flex-grow: 1;
+            gap: 15px 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 768px) {
+            margin-bottom: 30px;
+        }
 
         @media(min-width:1200px) {
             margin-bottom: 50px;
         }
     }
 
+    &__item:not(:last-child) {
+        margin-bottom: 10px;
+
+        @media (min-width: 480px) {
+            margin-bottom: 0;
+        }
+    }
+
     &__button {
+        //  При ширині екрану 480 залишити клікабельну зону таку, яка зображена на макеті?
+        width: 100%;
         letter-spacing: 0.48px;
-        padding: 11px 26px;
+        padding: 14px 0;
         font-size: 16px;
         background-color: $light-600;
         border-radius: 4px;
@@ -45,10 +63,16 @@
             background-color: $accent;
             box-shadow: inset 3px 3px 8px $dark-opacity-400;
         }
+
+        @media (min-width: 480px) {
+            padding: 11px 26px;
+            max-width: 100%;
+        }
     }
 
     &__card-list {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
     }
@@ -56,12 +80,16 @@
     &__card-item {
         width: 100%;
 
-        @media(min-width:768px) {
-            width: 47%;
+        @media (min-width: 480px) {
+            max-width: 450px;
         }
 
-        @media(min-width:1200px) {
-            width: initial;
+        @media (min-width: 768px) {
+            max-width: 355px;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 370px;
         }
     }
 }
