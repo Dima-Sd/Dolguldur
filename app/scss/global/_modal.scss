@@ -24,8 +24,14 @@
     }
 
     @media (orientation: landscape) {
+        padding: 40px 0;
         align-items: flex-start;
         overflow-y: scroll;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 0;
+        align-items: center;
     }
 }
 

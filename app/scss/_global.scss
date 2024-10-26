@@ -29,14 +29,20 @@ body {
 }
 
 .no-scroll {
-    position: relative;
     overflow: hidden;
-    height: 100vh;
 }
 
 .logo {
+    display: block;
+    width: 140px;
+    height: 30px;
     border-radius: 4px;
     transition: opacity 0.4s, outline 0.4s;
+
+    @media (min-width: 1200px) {
+        width: 189px;
+        height: 36px;
+    }
 
     &:hover {
         opacity: 0.6;
@@ -52,20 +58,27 @@ body {
     }
 
     &__img {
-        width: 140px;
         height: auto;
-
-        @media(min-width:1200px) {
-            width: 189px;
-        }
     }
 }
 
 .main {
-    padding-top: 60px;
+    margin-top: 60px;
 
     @media (min-width: 768px) {
-        padding-top: 80px;
+        margin-top: 84px;
+
+        @media (orientation: landscape) {
+            margin-top: 60px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        margin-top: 84px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: 80px;
     }
 }
 

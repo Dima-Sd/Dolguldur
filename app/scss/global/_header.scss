@@ -6,23 +6,19 @@
     background-color: $light;
     border-bottom: 1px solid $light-800;
     padding: 8px 0;
-    transition: background-color 0.4s, backdrop-filter 0.4s, padding 0.4s;
+    transition: background-color 0.4s, backdrop-filter 0.4s, padding 0.4s, opacity 0.4s;
 
-    &.active {
-        background-color: $light-800-opacity-700;
-        backdrop-filter: blur(3px);
-        padding: 15px 0;
+    // Мені потрібно, щоб всі мобільні пристрої мали падінг зверху та знизу 8px. Так, як це вже написано на базових властивостях, то додатковий брекпоїнт при горизонтальній ширині створювати не потрібно. Але, коли ми змінюємо падінг для планшетів при ширині 768, то базові стилі вже не будуть працювать. Виходить, що починаючи від 0 до 768px працють базові стилі, а при 768px мені потрібно перевизначити і написати, що при горизонтальній орієнтації працювали тіж самі падінги 
+    @media (min-width: 768px) {
+        padding: 20px 0;
 
-        @media (min-width: 768px) {
-            padding: 25px 0;
-        }
-
-        @media (min-width: 768px) {
-            padding: 30px 0;
+        @media (orientation: landscape) {
+            padding: 8px 0;
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
+        // Ширина найменшого планшета
         padding: 20px 0;
     }
 
@@ -30,9 +26,50 @@
         padding: 22px 0;
     }
 
+    &.active {
+        background-color: rgb(220, 220, 220, 0.9);
+        backdrop-filter: blur(5px);
+        padding: 15px 0;
+
+        @media (min-width: 768px) {
+            padding: 30px 0;
+
+            @media (orientation: landscape) {
+                padding: 15px 0;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            padding: 30px 0;
+        }
+
+        .mobile-button {
+            transform: rotate(180deg);
+
+            .mobile-button__line {
+                background-color: $accent;
+
+                &::before,
+                &::after {
+                    background-color: $accent;
+                }
+            }
+        }
+    }
+
+    &.fade {
+        @media (orientation: landscape) {
+            background-color: rgb(220, 220, 220, 0.6);
+            backdrop-filter: blur(1px);
+        }
+
+        @media (min-width: 1024px) {
+            background-color: rgb(220, 220, 220, 0.9);
+        }
+    }
+
     &__container {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         gap: 20px;
     }
@@ -41,6 +78,14 @@
         display: none;
 
         @media (min-width: 768px) {
+            display: block;
+
+            @media (orientation:landscape) {
+                display: none;
+            }
+        }
+
+        @media (min-width: 992px) {
             display: block;
         }
 
@@ -94,14 +139,11 @@
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
-    gap: 82px;
-
-    @media (min-width: 768px) {
-        justify-content: initial;
-    }
+    gap: 20px;
 
     @media (min-width: 1200px) {
         gap: 90px;
+        justify-content: initial;
     }
 
     &__list {
@@ -109,7 +151,20 @@
 
         @media (min-width: 768px) {
             display: flex;
+            margin: 0 auto;
             gap: 50px;
+
+            @media (orientation: landscape) {
+                display: none;
+            }
+        }
+
+        @media (min-width: 992px) {
+            display: flex;
+        }
+
+        @media (min-width: 1200px) {
+            margin: initial;
         }
     }
 
@@ -169,10 +224,19 @@
     border-radius: 6px;
     margin-right: -4px;
     position: relative;
-    z-index: 5;
-    transition: outline 0.4s, box-shadow 0.4s, background-color 0.4s;
+    z-index: 25;
+    transform: rotate(0);
+    transition: outline 0.4s, box-shadow 0.4s, background-color 0.4s, transform 0.4s;
 
     @media (min-width: 768px) {
+        display: none;
+
+        @media (orientation:landscape) {
+            display: flex;
+        }
+    }
+
+    @media (min-width: 992px) {
         display: none;
     }
 
@@ -253,6 +317,174 @@
             &::before {
                 transform: rotate(-45deg);
             }
+        }
+    }
+}
+
+.mobile-menu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: $light;
+    padding: 50px 25px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    line-height: 1.2;
+    transform: translateX(-150%);
+    transition: transform 0.5s;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    @media (min-width: 480px) {
+        padding: 50px 40px;
+    }
+
+    @media (min-width: 768px) {
+        display: none;
+
+        @media (orientation: landscape) {
+            display: flex;
+        }
+    }
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+
+    @media (orientation: landscape) {
+        padding: 50px 30px 25px;
+        gap: 2px;
+    }
+
+    &__list {
+        margin-bottom: auto;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+
+            @media (orientation: landscape) {
+                margin-bottom: 2px;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        font-size: 40px;
+        border-radius: 4px;
+        transition: color 0.4s, outline 0.4s, opacity 0.4s;
+
+        &:hover,
+        &.current {
+            color: $accent;
+        }
+
+        &:focus {
+            outline: 1px solid $accent;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+
+        @media (orientation: landscape) {
+            font-size: 30px;
+            padding: 5px 0;
+        }
+    }
+
+    &__contact-item:not(:last-child) {
+        .mobile-menu__contact-link {
+            color: $accent;
+        }
+    }
+
+    &__contact-link {
+        display: block;
+        font-size: 28px;
+        color: $dark-light;
+        padding: 12px 0;
+        border-radius: 4px;
+        transition: color 0.4s, outline 0.4s, opacity 0.4s;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus {
+            outline: 1px solid $accent;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+
+        @media (min-width: 480px) {
+            font-size: 32px;
+        }
+
+        @media (orientation: landscape) {
+            padding: 6px 0;
+            font-size: 22px;
+        }
+    }
+}
+
+.mobile-social {
+    margin-left: -10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        &:last-child {
+            .mobile-social__link::after {
+                width: 0;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        color: $accent;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 11px 10px;
+        position: relative;
+        border-radius: 2px;
+        text-decoration: underline transparent;
+        transition: text-decoration-color 0.4s, outline 0.4s, opacity 0.4s;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            width: 1px;
+            height: 22px;
+            background-color: $dark-opacity-200;
+        }
+
+        &:hover {
+            text-decoration-color: $accent;
+        }
+
+        &:focus {
+            outline: 1px solid $accent;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+
+        @media (orientation: landscape) {
+            padding: 8px 10px;
         }
     }
 }

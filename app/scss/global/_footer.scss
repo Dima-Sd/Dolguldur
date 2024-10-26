@@ -1,67 +1,63 @@
 .footer {
-    background-color: $dark-800;
     padding: 60px 0;
+    text-align: center;
+    background-color: $dark-800;
 
     @media (min-width: 1200px) {
         padding: 64px 0 60px;
+        text-align: left;
     }
 
     &__inner {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
         flex-wrap: wrap;
-        text-align: center;
-        gap: 45px;
+        column-gap: 140px;
+        row-gap: 60px;
 
         @media (min-width: 768px) {
             justify-content: space-around;
         }
 
         @media (min-width: 1200px) {
+            flex-wrap: nowrap;
             justify-content: space-between;
             gap: 0;
-            text-align: left;
         }
     }
 
     &__info {
+        max-width: 250px;
         width: 100%;
 
-        @media (min-width: 768px) {
-            width: 40%;
-            // Написав у відсотках, тому що блоки під назвою "info" та "content" не дотягують до ширини 1200 і перекидаються.
-        }
-
         @media (min-width: 1200px) {
-            margin-right: 50px;
-            max-width: 250px;
+            margin-right: 51px;
         }
     }
 
     &__logo {
-        display: inline-block;
-        padding: 10px;
+        margin: 0 auto 22px;
+        width: 140px;
+        height: 25px;
 
         @media (min-width: 1200px) {
-            padding: 0;
+            margin: initial;
             margin-bottom: 22px;
         }
     }
 
     &__location {
         color: $light;
-        letter-spacing: 0.55px;
-        margin-bottom: 4px;
+        margin-bottom: 5px;
 
-        @media (min-width: 1200px) {
+        @media (min-width:1200px) {
             margin-bottom: 9px;
         }
     }
 
     &__item {
-        @media (min-width: 1200px) {
-            &:not(:last-child) {
+        &:not(:last-child) {
+            @media (min-width: 1200px) {
                 margin-bottom: 9px;
             }
         }
@@ -71,16 +67,20 @@
         display: block;
         color: $secondary;
         border-radius: 4px;
-        padding: 4px 0;
+        padding: 5px;
         transition: color 0.4s, outline 0.4s, opacity 0.4s;
+
+        @media (min-width: 1200px) {
+            padding: 0;
+        }
 
         &:hover {
             color: $accent;
         }
 
         &:focus {
-            outline: 1px solid $accent;
             outline-offset: 4px;
+            outline: 1px solid $accent;
         }
 
         &:active {
@@ -90,15 +90,11 @@
     }
 
     &__content {
+        max-width: 206px;
         width: 100%;
 
-        @media (min-width: 768px) {
-            width: 40%;
-        }
-
         @media (min-width: 1200px) {
-            max-width: 206px;
-            margin-right: 94px;
+            margin-right: 93px;
         }
     }
 
@@ -106,48 +102,49 @@
         display: inline-block;
         color: $light;
         text-transform: uppercase;
-        letter-spacing: 0.55px;
-        line-height: 1.2;
         margin-bottom: 19px;
+        letter-spacing: 0.55px;
     }
 
-    &__form {
+    &__form-content {
         display: flex;
-        align-items: flex-end;
         flex-direction: column;
         gap: 20px 12px;
-        width: 100%;
-
-        @media (min-width: 480px) {
-            max-width: 450px;
-        }
 
         @media (min-width: 1200px) {
             flex-direction: row;
+        }
+    }
+
+    &__form {
+        max-width: 450px;
+        width: 100%;
+
+        @media (min-width: 1200px) {
             max-width: 570px;
         }
     }
 
     &__label {
+        display: block;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        color: $light;
-        text-transform: uppercase;
-        letter-spacing: 0.55px;
+
+        @media (min-width: 1200px) {
+            max-width: 358px;
+        }
     }
 
     &__input {
         width: 100%;
-        margin-top: 19px;
+        padding: 13px 16px;
         border-radius: 4px;
-        outline: 1px solid $light-opacity-300;
-        padding: 15px 16px;
-        transition: outline 0.4s, outline-offset 0.4s;
+        color: $light;
+        border: 1px solid $light-opacity-300;
+        transition: outline 0.4s;
 
         &::placeholder {
-            color: $light-opacity-600;
             font-size: 16px;
+            line-height: 1;
             transition: color 0.4s;
         }
 
@@ -168,8 +165,13 @@
     &__button {
         display: flex;
         align-items: center;
+        align-self: flex-start;
+        margin: 0 auto;
         gap: 20px;
         padding: 10px 28px 10px 39px;
-        margin: 0 auto;
+
+        @media (min-width: 1200px) {    
+            align-self: flex-start;
+        }
     }
 }

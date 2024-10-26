@@ -67,7 +67,6 @@
                         </a>
                     </li>
                 </ul>
-                <!-- Тут обгортка була потрібрна для того, щоб space-between не робив простір між списками з контактами та соціальними мережами -->
                 <ul class="mobile-menu__contact">
                     <li class="mobile-menu__contact-item">
                         <a class="mobile-menu__contact-link" href="tel:+380961111111">
@@ -176,7 +175,8 @@
             </label>
             <label class="form__label form__label-textarea" for="message">
                 Message
-                <textarea class="form__input form__input--big" name="message" id="message" placeholder="Your message..."required></textarea>
+                <textarea class="form__input form__input--big" name="message" id="message" placeholder="Your message..."
+                    required></textarea>
             </label>
             <label class="form__label-checkbox" for="subscription">
                 <input class="form__checkbox" type="checkbox" name="subscription" id="subscription" required>
@@ -186,7 +186,8 @@
                     </svg>
                 </span>
                 <p class="form__checkbox-subscription">
-                    I agree to the subscription and accept the <a class="form__subscription-link" href="#" target="_blank">Terms
+                    I agree to the subscription and accept the <a class="form__subscription-link" href="#"
+                        target="_blank">Terms
                         of use</a>
                 </p>
             </label>
@@ -626,7 +627,7 @@
             </div>
             <div class="footer__content">
                 <span class="footer__text">
-                    join
+                    Join
                 </span>
                 <ul class="social">
                     <li class="social__item">
@@ -671,18 +672,22 @@
                     </li>
                 </ul>
             </div>
-            <form class="footer__form">
-                <label class="footer__label">
-                    subscribe
-                    <input class="footer__input" type="email" name="e-mail" placeholder="E-mail" required>
-                </label>
-                <button class="button footer__button" type="submit">
+            <div class="footer__form">
+                <span class="footer__text">
                     Subscribe
-                    <svg class="icon" width="24" height="24">
-                        <use href="./images/sprite.svg#flower"></use>
-                    </svg>
-                </button>
-            </form>
+                </span>
+                <form class="footer__form-content">
+                    <label class="footer__label">
+                        <input class="footer__input" type="email" name="e-mail" placeholder="E-mail" required>
+                    </label>
+                    <button class="button footer__button" type="submit">
+                        Subscribe
+                        <svg class="icon" width="24" height="24">
+                            <use href="./images/sprite.svg#flower"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
 </footer>

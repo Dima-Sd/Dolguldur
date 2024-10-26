@@ -8,10 +8,7 @@
 
     &__item {
         width: 100%;
-
-        @media (min-width: 480px) {
-            max-width: 210px;
-        }
+        max-width: 210px;
 
         @media (min-width: 768px) {
             max-width: 226px;
@@ -28,7 +25,6 @@
         align-items: center;
         gap: 10px;
         width: 100%; 
-        // Я написав замість фіксованої ширини, яка була на цьому елементі гнучку ширину, яка буде дивиться, яка ширина буде у батька ,і буде підлаштовуватися під неї
         height: 92px;
         border: 1px solid $dark-light;
         color: $dark-light;

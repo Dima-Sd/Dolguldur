@@ -21,13 +21,18 @@ $(document).ready(function () {
     })
 
     const header = document.querySelector('[data-header]');
-    window = window.addEventListener('scroll', function () {
+    window.addEventListener('scroll', function () {
         header.classList.add('active')
         let scrollPosition = this.scrollY
         if (scrollPosition > 0) {
             header.classList.add('active')
         } else {
             header.classList.remove('active')
+        }
+        if ((window.innerHeight + scrollPosition) >= document.body.offsetHeight) {
+            header.classList.add('fade');
+        } else {
+            header.classList.remove('fade');
         }
     });
 

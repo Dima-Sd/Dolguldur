@@ -8,10 +8,7 @@
 
     &__item {
         width: 100%;
-
-        @media(min-width:480px) {
-            max-width: 450px;
-        }
+        max-width: 450px;
 
         @media(min-width:768px) {
             max-width: 354px;
