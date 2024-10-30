@@ -22,7 +22,7 @@
     <header class="header" data-header>
     <div class="container header__container">
         <nav class="menu">
-            <a class="logo" href="index.html">
+            <a class="logo header__logo" href="index.html">
                 <img class="logo__img" width="189" height="36" src="./images/logo-header.svg" alt="logo DolGuldur">
             </a>
             <ul class="menu__list">
@@ -187,7 +187,7 @@
     </div>
 </div>
         <section class="works section">
-            <div class="container works__inner">
+            <div class="container">
                 <ul class="works__list">
                     <li class="works__item">
                         <button class="works__button" type="button" data-filter="all">
@@ -454,13 +454,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__form">
+            <div class="footer__subscribe">
                 <span class="footer__text">
                     Subscribe
                 </span>
-                <form class="footer__form-content">
-                    <label class="footer__label">
-                        <input class="footer__input" type="email" name="e-mail" placeholder="E-mail" required>
+                <form class="footer__form">
+                    <label class="footer__label" for="subscribe">
+                        <span class="visually-hidden">
+                            write your e-mail
+                        </span>
+                        <input class="footer__input" type="email" name="e-mail" id="subscribe" placeholder="E-mail" required>
                     </label>
                     <button class="button footer__button" type="submit">
                         Subscribe

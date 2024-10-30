@@ -1,17 +1,12 @@
 .works {
-    &__inner {
-        display: flex;
-        flex-direction: column;
-    }
-
     &__list {
-        margin: 0 auto 40px;
-        flex-grow: 1;
         gap: 15px 10px;
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 40px;
 
         @media (min-width: 768px) {
+            justify-content: center;
             margin-bottom: 30px;
         }
 

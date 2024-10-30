@@ -34,15 +34,8 @@ body {
 
 .logo {
     display: block;
-    width: 140px;
-    height: 30px;
     border-radius: 4px;
     transition: opacity 0.4s, outline 0.4s;
-
-    @media (min-width: 1200px) {
-        width: 189px;
-        height: 36px;
-    }
 
     &:hover {
         opacity: 0.6;

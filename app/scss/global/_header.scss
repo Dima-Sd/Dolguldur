@@ -132,6 +132,16 @@
             opacity: 0.7;
         }
     }
+
+    &__logo {
+        width: 140px;
+        height: 30px;
+
+        @media (min-width: 1200px) {
+            width: initial;
+            height: initial;
+        }
+    }
 }
 
 .menu {

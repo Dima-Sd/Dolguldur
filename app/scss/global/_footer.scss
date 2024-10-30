@@ -15,20 +15,19 @@
         column-gap: 140px;
         row-gap: 60px;
 
-        @media (min-width: 768px) {
-            justify-content: space-around;
-        }
-
         @media (min-width: 1200px) {
-            flex-wrap: nowrap;
             justify-content: space-between;
             gap: 0;
         }
     }
 
     &__info {
-        max-width: 250px;
+        max-width: 320px;
         width: 100%;
+
+        @media (min-width: 768px) {
+            max-width: 250px;
+        }
 
         @media (min-width: 1200px) {
             margin-right: 51px;
@@ -36,13 +35,12 @@
     }
 
     &__logo {
-        margin: 0 auto 22px;
         width: 140px;
         height: 25px;
+        margin: 0 auto 22px;
 
         @media (min-width: 1200px) {
-            margin: initial;
-            margin-bottom: 22px;
+            margin: 0 0 22px;
         }
     }
 
@@ -90,8 +88,12 @@
     }
 
     &__content {
-        max-width: 206px;
+        max-width: 330px;
         width: 100%;
+
+        @media (min-width: 768px) {
+            max-width: 206px;
+        }
 
         @media (min-width: 1200px) {
             margin-right: 93px;
@@ -106,7 +108,7 @@
         letter-spacing: 0.55px;
     }
 
-    &__form-content {
+    &__form {
         display: flex;
         flex-direction: column;
         gap: 20px 12px;
@@ -116,7 +118,7 @@
         }
     }
 
-    &__form {
+    &__subscribe {
         max-width: 450px;
         width: 100%;
 
@@ -170,7 +172,7 @@
         gap: 20px;
         padding: 10px 28px 10px 39px;
 
-        @media (min-width: 1200px) {    
+        @media (min-width: 1200px) {
             align-self: flex-start;
         }
     }
