@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.hero__slider').slick({
         arrows: false,
         fade: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 1500,
         infinite: true,
     });

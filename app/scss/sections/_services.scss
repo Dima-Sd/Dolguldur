@@ -1,9 +1,9 @@
 .services {
     display: none;
-    padding-top: 0px;
+    padding-top: 0;
 
     @media(min-width:1200px) {
-        display: initial;
+        display: flex;
     }
 
     &__list {
@@ -30,9 +30,5 @@
         width: 100%;
         text-align: center;
         background-color: $dark-400;
-    }
-
-    &__img {
-        object-fit: cover;
     }
 }

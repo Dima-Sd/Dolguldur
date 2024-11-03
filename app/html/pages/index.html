@@ -21,7 +21,14 @@
             Website development by DolGuldur
         </h1>
         <section class="hero">
-            @@include('../components/slider.html')
+            <div class="hero__slider">
+                <div class="hero__slider-item hero__slider-item--face">
+                </div>
+                <div class="hero__slider-item hero__slider-item--writer">
+                </div>
+                <div class="hero__slider-item hero__slider-item--user">
+                </div>
+            </div>
             <div class="container">
                 <div class="hero__content">
                     <h2 class="hero__title">
@@ -109,67 +116,43 @@
                         <h3 class="services__title">
                             Desktop apps
                         </h3>
-                        <img class="services__img" width="370" height="294" src="./images/services/desktop.jpg"
-                            alt="a desktop on which user devices lie">
+                        <picture>
+                            <source srcset="./images/services/desktop.webp 1x, ./images/services/desktop-2x.webp 2x"
+                                type="image/webp">
+                            <source srcset="./images/services/desktop.jpg 1x, ./images/services/desktop-2x.jpg 2x">
+                            <img class="services__img" src="./images/services/desktop.jpg"
+                                alt="a desktop on which user devices lie" width="370" height="294">
+                        </picture>
                     </li>
                     <li class="services__item">
                         <h3 class="services__title">
                             Mobile apps
                         </h3>
-                        <img class="services__img" width="370" height="294" src="./images/services/telephone.jpg"
-                            alt="user holding his mobile phone">
+                        <picture>
+                            <source srcset="./images/services/phone.webp 1x, ./images/services/phone-2x.webp 2x"
+                                type="image/webp">
+                            <source srcset="./images/services/phone.jpg 1x, ./images/services/phone-2x.jpg 2x">
+                            <img class="services__img" src="./images/services/phone.jpg"
+                                alt="user holding his mobile phone" width="370" height="294">
+                        </picture>
                     </li>
                     <li class="services__item">
                         <h3 class="services__title">
                             Modern design
                         </h3>
-                        <img class="services__img" width="370" height="294" src="./images/services/pencils.jpg"
-                            alt="A hand holds a colored pencil, a box of pencils is next to it">
+                        <picture>
+                            <source srcset="./images/services/drafting.webp 1x, ./images/services/drafting-2x.webp 2x"
+                                type="image/webp">
+                            <source srcset="./images/services/drafting.jpg 1x, ./images/services/drafting-2x.jpg 2x">
+                            <img class="services__img" src="./images/services/drafting.jpg"
+                                alt="A hand holds a colored pencil, a box of pencils is next to it" width="370"
+                                height="294">
+                        </picture>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="team section">
-            <div class="container">
-                <h2 class="title">
-                    Our team
-                </h2>
-                <ul class="team__list">
-                    <li class="team__item">
-                        @@include('../components/team-card.html',{
-                        "img":"Paul",
-                        "alt":"Paul Castanie",
-                        "name":"Paul Castanie",
-                        "profession":"Product Designer"
-                        })
-                    </li>
-                    <li class="team__item">
-                        @@include('../components/team-card.html',{
-                        "img":"Joanna",
-                        "alt":"Joanna Nix",
-                        "name":"Joanna Nix",
-                        "profession":"Frontend Developer"
-                        })
-                    </li>
-                    <li class="team__item">
-                        @@include('../components/team-card.html',{
-                        "img":"Aldo",
-                        "alt":"Aldo Delara",
-                        "name":"Aldo Delara",
-                        "profession":"Marketing"
-                        })
-                    </li>
-                    <li class="team__item">
-                        @@include('../components/team-card.html',{
-                        "img":"Oladimeji",
-                        "alt":"Oladimeji Odunsi",
-                        "name":"Oladimeji Odunsi",
-                        "profession":"UI Designer"
-                        })
-                    </li>
-                </ul>
-            </div>
-        </section>
+        @@include('../components/section-team.html')
         <section class="partners section">
             <div class="container">
                 <h2 class="title">
