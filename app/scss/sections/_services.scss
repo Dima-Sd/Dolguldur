@@ -1,9 +1,9 @@
 .services {
     display: none;
-    padding-top: 0;
 
     @media(min-width:1200px) {
         display: flex;
+        padding-top: 0;
     }
 
     &__list {

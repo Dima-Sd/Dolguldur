@@ -35,102 +35,119 @@
         height: 100%;
     }
 
-    &__slider-item::before {
-        content: "";
+    &__slider-item {
         position: absolute;
         height: 100%;
         width: 100%;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+
+        @media (orientation: landscape) {
+            background-position: top;
+        }
+
+        @media (min-width: 992px) {
+            background-position: center;
+        }
     }
 
-    &__slider-item--face::before {
-        background-image: url('../../images/slider/girl-face-mob.jpg');
+    &__slider-item--face {
+        background-image: url('../images/slider/girl-face-mob.jpg');
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('../../images/slider/girl-face-mob-2x.jpg');
+            background-image: url('../images/slider/girl-face-mob-2x.jpg');
         }
 
         @media (min-width: 768px) {
-            background-image: url('../../images/slider/girl-face-tab.jpg');
+            background-image: url('../images/slider/girl-face-tab.jpg');
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url('../../images/slider/girl-face-tab-2x.jpg');
+                background-image: url('../images/slider/girl-face-tab-2x.jpg');
             }
         }
 
         @media (min-width: 1200px) {
-            background-image: url('../../images/slider/girl-face.jpg');
+            background-image: url('../images/slider/girl-face.jpg');
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url('../../images/slider/girl-face-2x.jpg');
+                background-image: url('../images/slider/girl-face-2x.jpg');
             }
         }
     }
 
-    &__slider-item--writer::before {
-        background-image: url('../../images/slider/writer-mob.jpg');
+    &__slider-item--writer {
+        background-image: url('../images/slider/writer-mob.jpg');
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('../../images/slider/writer-mob-2x.jpg');
+            background-image: url('../images/slider/writer-mob-2x.jpg');
         }
 
-        @media (min-width: 768px) {
-            background-image: url('../../images/slider/writer-tab.jpg');
+        @media (orientation: landscape) {
+            background-image: url('../images/slider/writer-tab.jpg');
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url('../../images/slider/writer-tab-2x.jpg');
+                background-image: url('../images/slider/writer-tab-2x.jpg');
+            }
+        }
+
+        @media (min-width: 768px) {
+            background-image: url('../images/slider/writer-tab.jpg');
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url('../images/slider/writer-tab-2x.jpg');
             }
         }
 
         @media (min-width: 1200px) {
-            background-image: url('../../images/slider/writer.jpg');
+            background-image: url('../images/slider/writer.jpg');
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url('../../images/slider/writer-2x.jpg');
+                background-image: url('../images/slider/writer-2x.jpg');
             }
         }
     }
 
-    &__slider-item--user::before {
-        background-image: url('../../images/slider/сomputer-user-mob.jpg');
+    &__slider-item--user {
+        background-image: url('../images/slider/сomputer-user-mob.jpg');
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('../../images/slider/сomputer-user-mob-2x.jpg');
+            background-image: url('../images/slider/сomputer-user-mob-2x.jpg');
         }
 
         @media (min-width: 768px) {
-            background-image: url('../../images/slider/сomputer-user-tab.jpg');
+            background-image: url('../images/slider/сomputer-user-tab.jpg');
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url('../../images/slider/сomputer-user-tab-2x.jpg');
+                background-image: url('../images/slider/сomputer-user-tab-2x.jpg');
             }
         }
 
         @media (min-width: 1200px) {
-            background-image: url('../../images/slider/сomputer-user.jpg');
+            background-image: url('../images/slider/сomputer-user.jpg');
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url('../../images/slider/сomputer-user-2x.jpg');
+                background-image: url('../images/slider/сomputer-user-2x.jpg');
             }
         }
     }

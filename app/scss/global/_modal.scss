@@ -37,7 +37,7 @@
 
 .modal {
     width: 100%;
-    max-width: 450px;
+    max-width: 528px;
     background-color: $light;
     box-shadow: 8px 8px 3px $dark-opacity-120;
     transform: scale(1);
@@ -45,10 +45,6 @@
     margin: 0 15px;
     border-radius: 6px;
     transition: transform 0.5s;
-
-    @media (min-width: 1200px) {
-        max-width: 528px;
-    }
 
     &__close {
         right: 8px;
