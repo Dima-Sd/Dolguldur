@@ -47,6 +47,10 @@
     transition: transform 0.5s;
 
     &__close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $dark;
         right: 8px;
         top: 8px;
         width: 44px;
@@ -54,9 +58,6 @@
         position: absolute;
         border-radius: 50%;
         outline: 1px solid $dark-opacity-100;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         transition: color 0.4s, outline-color 0.4s, box-shadow 0.4s;
 
         &:hover {
