@@ -107,7 +107,6 @@
                     </p>
                     <label class="form__label">
                         <span class="form__description">
-                            <!-- Тут легко можна обійтися без всяких спанів, але дуже велику грає роль висота рядка для цього тесту, тож прийшло створювати -->
                             Name
                         </span>
                         <input class="form__input" type="text" name="name" required>
@@ -147,7 +146,6 @@
                             required></textarea>
                     </label>
                     <label class="checkbox form__checkbox">
-                        <!-- Створив мікс класів, тому що в мене checkbox є блоком по BEM, тож він буде на сайті десь перевикористовуватися. Тож марджин, який я задав на label буде мішати в якомусь іншому місці на сайті. Тож я створюю іминно локальний клас, бо як ти вчив, що якщо нам потрібно змінити зовнішню поведінку елемента , то тільки через локальний клас  -->
                         <input class="checkbox__input" type="checkbox" name="subscription" required>
                         <span class="checkbox__box">
                             <svg class="icon" width="10" height="8">
@@ -155,8 +153,6 @@
                             </svg>
                         </span>
                         <p class="checkbox__subscription">
-                            <!-- Можна була обійтися без обгортки, але коли тексту стає
-                            більше, то тоді це не як не підтримаєш -->
                             I agree to the subscription and accept the <a class="checkbox__link" href="#"
                                 target="_blank">Terms of use</a>
                         </p>
@@ -167,7 +163,6 @@
                 </form>
             </div>
         </div>
-        <!-- Після взаємодії з кнопкою(Go to order) буде розташовуватися сама модалка -->
         <section class="advantages section">
             <div class="container">
                 <h2 class="visually-hidden">
@@ -652,11 +647,8 @@
                             subscribe
                         </span>
                         <input class="footer__input" type="email" name="e-mail" placeholder="E-mail" required>
-                        <!-- Верстальники пишуть в атрибут name типу заглушку, а тоді вже бекендер реалізує , що буде відправлятися на форму? І коли потрібно буде реалізувати це на сайті, то на мені лежить відповідальність за те, щоб найти бекендера та залучити його до виконання цієї роботи? -->
                     </label>
                     <button class="button button--light footer__button" type="submit">
-                        <!-- А якщо, наприклад, в мене змінюється тінь у 
-                        кнопки, то я створюю модифікатор. А якщо плюс до цього мені потрібно змінити звонюшню поведінку, то треба ще дописувати локальний клас? Це через один клас можливо реалізувати? -->
                         Subscribe
                         <svg class="icon" width="24" height="24">
                             <use href="./images/sprite.svg#flower"></use>
