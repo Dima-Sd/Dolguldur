@@ -16,772 +16,778 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
-    <meta name='freelancehunt' content='840aaba9fa249e6'>
 </head>
 
 <body>
-    <header class="header" data-header>
-        <div class="container header__container">
-            <nav class="menu">
-                <a class="logo header__logo" href="index.html">
-                    <img class="logo__img" width="189" height="36" src="./images/logo-header.svg" alt="logo DolGuldur">
-                </a>
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link current" href="index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link @@currentWorks" href="works.html">
-                            Our Works
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">
-                            Contacts
-                        </a>
-                    </li>
-                </ul>
-                <button class="mobile-button" type="button" data-menu-button>
-                    <span class="visually-hidden">
-                        open/close the mobile menu
-                    </span>
-                    <span class="mobile-button__line">
-                    </span>
-                </button>
-                <div class="mobile-menu" data-menu>
-                    <ul class="mobile-menu__list">
-                        <li class="mobile-menu__item">
-                            <a class="mobile-menu__link current" href="index.html">
+    <div class="wrapper">
+        <header class="header" data-header>
+            <div class="container header__container">
+                <nav class="menu">
+                    <a class="logo header__logo" href="index.html">
+                        <img class="logo__img" width="189" height="36" src="./images/logo-header.svg"
+                            alt="logo DolGuldur">
+                    </a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link current" href="index.html">
                                 Home
                             </a>
                         </li>
-                        <li class="mobile-menu__item">
-                            <a class="mobile-menu__link @@currentWorks" href="works.html">
+                        <li class="menu__item">
+                            <a class="menu__link @@currentWorks" href="works.html">
                                 Our Works
                             </a>
                         </li>
-                        <li class="mobile-menu__item">
-                            <a class="mobile-menu__link" href="#">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
                                 Contacts
                             </a>
                         </li>
                     </ul>
-                    <ul class="mobile-menu__contact">
-                        <li class="mobile-menu__contact-item">
-                            <a class="mobile-menu__contact-link" href="tel:+380961111111">
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                        <li class="mobile-menu__contact-item">
-                            <a class="mobile-menu__contact-link" href="mailto:info@dolguldur.com">
-                                info@dolguldur.com
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="mobile-social">
-                        <li class="mobile-social__item">
-                            <a class="mobile-social__link" href="#">
-                                Instagram
-                            </a>
-                        </li>
-                        <li class="mobile-social__item">
-                            <a class="mobile-social__link" href="#">
-                                Twitter
-                            </a>
-                        </li>
-                        <li class="mobile-social__item">
-                            <a class="mobile-social__link" href="#">
-                                Facebook
-                            </a>
-                        </li>
-                        <li class="mobile-social__item">
-                            <a class="mobile-social__link" href="#">
-                                LinkedIn
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <ul class="header__list">
-                <li class="header__item">
-                    <a class="header__link" href="mailto:info@dolguldur.com">
-                        <svg class="icon" width="16" height="12">
-                            <use href="./images/sprite.svg#e-mail"></use>
-                        </svg>
-                        info@dolguldur.com
-                    </a>
-                </li>
-                <li class="header__item">
-                    <a class="header__link" href="tel:+380961111111">
-                        <svg class="icon" width="10" height="16">
-                            <use href="./images/sprite.svg#phone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <main class="main">
-        <h1 class="visually-hidden">
-            Website development by DolGuldur
-        </h1>
-        <section class="hero">
-            <div class="hero__slider">
-                <div class="hero__slider-item hero__slider-item--face">
-                </div>
-                <div class="hero__slider-item hero__slider-item--writer">
-                </div>
-                <div class="hero__slider-item hero__slider-item--user">
-                </div>
-            </div>
-            <div class="container">
-                <div class="hero__content">
-                    <h2 class="hero__title">
-                        Author's forge where <br> your sites are created
-                    </h2>
-                    <button class="button" type="button" data-modal-open>
-                        Go to order
-                    </button>
-                </div>
-            </div>
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <form class="form">
-                        <h3 class="form__title">
-                            Tell about yourself and we will contact you
-                        </h3>
-                        <label class="form__label" for="name">
-                            Name
-                            <input class="form__input" type="text" name="name" id="name" required>
-                            <svg class="icon form__icon" width="12" height="12">
-                                <use href="./images/sprite.svg#user"></use>
-                            </svg>
-                        </label>
-                        <label class="form__label" for="phone">
-                            Phone
-                            <input class="form__input" type="tel" name="number" id="phone" required>
-                            <svg class="icon form__icon" width="13" height="13">
-                                <use href="./images/sprite.svg#telephone"></use>
-                            </svg>
-                        </label>
-                        <label class="form__label" for="email">
-                            E-mail
-                            <input class="form__input" type="email" name="e-mail" id="email" required>
-                            <svg class="icon form__icon" width="15" height="12">
-                                <use href="./images/sprite.svg#email"></use>
-                            </svg>
-                        </label>
-                        <label class="form__label form__label-textarea" for="message">
-                            Message
-                            <textarea class="form__input form__input--big" name="message" id="message"
-                                placeholder="Your message..." required></textarea>
-                        </label>
-                        <label class="form__label-checkbox" for="subscription">
-                            <input class="form__checkbox" type="checkbox" name="subscription" id="subscription"
-                                required>
-                            <span class="form__checkbox-fake">
-                                <svg class="icon" width="10" height="8">
-                                    <use href="./images/sprite.svg#checked"></use>
-                                </svg>
-                            </span>
-                            <p class="form__checkbox-subscription">
-                                I agree to the subscription and accept the <a class="form__subscription-link" href="#"
-                                    target="_blank">Terms
-                                    of use</a>
-                            </p>
-                        </label>
-                        <button class="button form__button" type="submit">
-                            Submit
-                        </button>
-                    </form>
-                    <button class="modal__close" type="button" data-modal-close>
-                        <svg class="icon" width="16" height="16">
-                            <use href="./images/sprite.svg#modal-close"></use>
-                        </svg>
+                    <button class="mobile-button" type="button" data-menu-button>
                         <span class="visually-hidden">
-                            close modal
+                            open/close the mobile menu
+                        </span>
+                        <span class="mobile-button__line">
                         </span>
                     </button>
-                </div>
-            </div>
-        </section>
-        <section class="advantages section">
-            <div class="container">
-                <h2 class="visually-hidden">
-                    Our advantages
-                </h2>
-                <ul class="advantages__inner">
-                    <li class="advantages__item">
-                        <div class="advantages__box">
-                            <svg class="advantages__icon" width="70" height="70">
-                                <use href="./images/sprite.svg#advantages-hands"></use>
-                            </svg>
-                        </div>
-                        <h3 class="advantages__subtitle">
-                            Effective team
-                        </h3>
-                        <p class="advantages__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.
-                        </p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="advantages__box">
-                            <svg class="advantages__icon" width="70" height="70">
-                                <use href="./images/sprite.svg#advantages-telephone"></use>
-                            </svg>
-                        </div>
-                        <h3 class="advantages__subtitle">
-                            Punctuality
-                        </h3>
-                        <p class="advantages__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.
-                        </p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="advantages__box">
-                            <svg class="advantages__icon" width="70" height="70">
-                                <use href="./images/sprite.svg#advantages-person"></use>
-                            </svg>
-                        </div>
-                        <h3 class="advantages__subtitle">
-                            Planning
-                        </h3>
-                        <p class="advantages__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.
-                        </p>
-                    </li>
-                    <li class="advantages__item">
-                        <div class="advantages__box">
-                            <svg class="advantages__icon" width="70" height="70">
-                                <use href="./images/sprite.svg#advantages-table"></use>
-                            </svg>
-                        </div>
-                        <h3 class="advantages__subtitle">
-                            Innovation
-                        </h3>
-                        <p class="advantages__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="services section">
-            <div class="container">
-                <h2 class="title">
-                    Our services
-                </h2>
-                <ul class="services__list">
-                    <li class="services__item">
-                        <h3 class="services__title">
-                            Desktop apps
-                        </h3>
-                        <picture>
-                            <source srcset="./images/services/desktop.webp 1x, ./images/services/desktop-2x.webp 2x"
-                                type="image/webp">
-                            <source srcset="./images/services/desktop.jpg 1x, ./images/services/desktop-2x.jpg 2x">
-                            <img class="services__img" src="./images/services/desktop.jpg"
-                                alt="a desktop on which user devices lie" width="370" height="294">
-                        </picture>
-                    </li>
-                    <li class="services__item">
-                        <h3 class="services__title">
-                            Mobile apps
-                        </h3>
-                        <picture>
-                            <source srcset="./images/services/phone.webp 1x, ./images/services/phone-2x.webp 2x"
-                                type="image/webp">
-                            <source srcset="./images/services/phone.jpg 1x, ./images/services/phone-2x.jpg 2x">
-                            <img class="services__img" src="./images/services/phone.jpg"
-                                alt="user holding his mobile phone" width="370" height="294">
-                        </picture>
-                    </li>
-                    <li class="services__item">
-                        <h3 class="services__title">
-                            Modern design
-                        </h3>
-                        <picture>
-                            <source srcset="./images/services/drafting.webp 1x, ./images/services/drafting-2x.webp 2x"
-                                type="image/webp">
-                            <source srcset="./images/services/drafting.jpg 1x, ./images/services/drafting-2x.jpg 2x">
-                            <img class="services__img" src="./images/services/drafting.jpg"
-                                alt="A hand holds a colored pencil, a box of pencils is next to it" width="370"
-                                height="294">
-                        </picture>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="team section">
-            <div class="container">
-                <h2 class="title">
-                    Our team
-                </h2>
-                <ul class="team__list">
-                    <li class="team__item">
-                        <article class="team-card">
-                            <picture>
-                                <source srcset="./images/team/Paul.webp 1x, ./images/team/Paul-2x.webp 2x"
-                                    type="image/webp" media="(min-width:1200px)">
-                                <source srcset="./images/team/Paul.jpg 1x, ./images/team/Paul-2x.jpg 2x"
-                                    media="(min-width:1200px)">
-                                <source srcset="./images/team/Paul-tab.webp 1x, ./images/team/Paul-tab-2x.webp 2x"
-                                    type="image/webp" media="(min-width:768px)">
-                                <source srcset="./images/team/Paul-tab.jpg 1x, ./images/team/Paul-tab-2x.jpg 2x"
-                                    media="(min-width:768px)">
-                                <source srcset="./images/team/Paul-mob.webp 1x, ./images/team/Paul-mob-2x.webp 2x"
-                                    type="image/webp" media="(min-width:320px)">
-                                <source srcset="./images/team/Paul-mob.jpg 1x, ./images/team/Paul-mob-2x.jpg 2x"
-                                    media="(min-width:320px)">
-                                <img class="team-card__picture" src="./images/team/Paul.jpg" alt="Paul Castanie"
-                                    width="450" height="460">
-                            </picture>
-                            <div class="team-card__content">
-                                <h3 class="team-card__name">
-                                    Paul Castanie
-                                </h3>
-                                <p class="team-card__profession">
-                                    Product Designer
-                                </p>
-                                <ul class="social">
-                                    <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#instagram"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Paul Castanie's Instagram
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#twitter"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Paul Castanie's twitter
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#facebook"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Paul Castanie's facebook
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#linkedin"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Paul Castanie's linkedin
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="team__item">
-                        <article class="team-card">
-                            <picture>
-                                <source srcset="./images/team/Joanna.webp 1x, ./images/team/Joanna-2x.webp 2x"
-                                    type="image/webp" media="(min-width:1200px)">
-                                <source srcset="./images/team/Joanna.jpg 1x, ./images/team/Joanna-2x.jpg 2x"
-                                    media="(min-width:1200px)">
-                                <source srcset="./images/team/Joanna-tab.webp 1x, ./images/team/Joanna-tab-2x.webp 2x"
-                                    type="image/webp" media="(min-width:768px)">
-                                <source srcset="./images/team/Joanna-tab.jpg 1x, ./images/team/Joanna-tab-2x.jpg 2x"
-                                    media="(min-width:768px)">
-                                <source srcset="./images/team/Joanna-mob.webp 1x, ./images/team/Joanna-mob-2x.webp 2x"
-                                    type="image/webp" media="(min-width:320px)">
-                                <source srcset="./images/team/Joanna-mob.jpg 1x, ./images/team/Joanna-mob-2x.jpg 2x"
-                                    media="(min-width:320px)">
-                                <img class="team-card__picture" src="./images/team/Joanna.jpg" alt="Joanna Nix"
-                                    width="450" height="460">
-                            </picture>
-                            <div class="team-card__content">
-                                <h3 class="team-card__name">
-                                    Joanna Nix
-                                </h3>
-                                <p class="team-card__profession">
-                                    Frontend Developer
-                                </p>
-                                <ul class="social">
-                                    <li class="social__item">
-                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#instagram"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Joanna Nix's Instagram
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#twitter"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Joanna Nix's twitter
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#facebook"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Joanna Nix's facebook
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#linkedin"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Joanna Nix's linkedin
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="team__item">
-                        <article class="team-card">
-                            <picture>
-                                <source srcset="./images/team/Aldo.webp 1x, ./images/team/Aldo-2x.webp 2x"
-                                    type="image/webp" media="(min-width:1200px)">
-                                <source srcset="./images/team/Aldo.jpg 1x, ./images/team/Aldo-2x.jpg 2x"
-                                    media="(min-width:1200px)">
-                                <source srcset="./images/team/Aldo-tab.webp 1x, ./images/team/Aldo-tab-2x.webp 2x"
-                                    type="image/webp" media="(min-width:768px)">
-                                <source srcset="./images/team/Aldo-tab.jpg 1x, ./images/team/Aldo-tab-2x.jpg 2x"
-                                    media="(min-width:768px)">
-                                <source srcset="./images/team/Aldo-mob.webp 1x, ./images/team/Aldo-mob-2x.webp 2x"
-                                    type="image/webp" media="(min-width:320px)">
-                                <source srcset="./images/team/Aldo-mob.jpg 1x, ./images/team/Aldo-mob-2x.jpg 2x"
-                                    media="(min-width:320px)">
-                                <img class="team-card__picture" src="./images/team/Aldo.jpg" alt="Aldo Delara"
-                                    width="450" height="460">
-                            </picture>
-                            <div class="team-card__content">
-                                <h3 class="team-card__name">
-                                    Aldo Delara
-                                </h3>
-                                <p class="team-card__profession">
-                                    Marketing
-                                </p>
-                                <ul class="social">
-                                    <li class="social__item">
-                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#instagram"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Aldo Delara's Instagram
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#twitter"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Aldo Delara's twitter
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#facebook"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Aldo Delara's facebook
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#linkedin"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Aldo Delara's linkedin
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </li>
-                    <li class="team__item">
-                        <article class="team-card">
-                            <picture>
-                                <source srcset="./images/team/Oladimeji.webp 1x, ./images/team/Oladimeji-2x.webp 2x"
-                                    type="image/webp" media="(min-width:1200px)">
-                                <source srcset="./images/team/Oladimeji.jpg 1x, ./images/team/Oladimeji-2x.jpg 2x"
-                                    media="(min-width:1200px)">
-                                <source
-                                    srcset="./images/team/Oladimeji-tab.webp 1x, ./images/team/Oladimeji-tab-2x.webp 2x"
-                                    type="image/webp" media="(min-width:768px)">
-                                <source
-                                    srcset="./images/team/Oladimeji-tab.jpg 1x, ./images/team/Oladimeji-tab-2x.jpg 2x"
-                                    media="(min-width:768px)">
-                                <source
-                                    srcset="./images/team/Oladimeji-mob.webp 1x, ./images/team/Oladimeji-mob-2x.webp 2x"
-                                    type="image/webp" media="(min-width:320px)">
-                                <source
-                                    srcset="./images/team/Oladimeji-mob.jpg 1x, ./images/team/Oladimeji-mob-2x.jpg 2x"
-                                    media="(min-width:320px)">
-                                <img class="team-card__picture" src="./images/team/Oladimeji.jpg" alt="Oladimeji Odunsi"
-                                    width="450" height="460">
-                            </picture>
-                            <div class="team-card__content">
-                                <h3 class="team-card__name">
-                                    Oladimeji Odunsi
-                                </h3>
-                                <p class="team-card__profession">
-                                    UI Designer
-                                </p>
-                                <ul class="social">
-                                    <li class="social__item">
-                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#instagram"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Oladimeji Odunsi's Instagram
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#twitter"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Oladimeji Odunsi's twitter
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#facebook"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Oladimeji Odunsi's facebook
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
-                                            <svg class="icon icon--light" width="20" height="20">
-                                                <use href="./images/sprite.svg#linkedin"></use>
-                                            </svg>
-                                            <span class="visually-hidden">
-                                                Go to Oladimeji Odunsi's linkedin
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="partners section">
-            <div class="container">
-                <h2 class="title">
-                    Our partners
-                </h2>
-                <ul class="partners__list">
-                    <li class="partners__item">
-                        <a class="partners__link" href="#" target="_blank">
-                            <svg class="icon" width="60" height="60">
-                                <use href="./images/sprite.svg#rails"></use>
-                            </svg>
-                            <span class="visually-hidden">
-                                switch to the Rails web framework
-                            </span>
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a class="partners__link" href="#" target="_blank">
-                            <svg class="icon" width="60" height="60">
-                                <use href="./images/sprite.svg#googlepay"></use>
-                            </svg>
-                            <span class="visually-hidden">
-                                go to the Google Play platform
-                            </span>
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a class="partners__link" href="#" target="_blank">
-                            <svg class="icon" width="60" height="60">
-                                <use href="./images/sprite.svg#playstation"></use>
-                            </svg>
-                            <span class="visually-hidden">
-                                switch to the PlayStation game console brand
-                            </span>
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a class="partners__link" href="#" target="_blank">
-                            <svg class="icon" width="60" height="60">
-                                <use href="./images/sprite.svg#applepay"></use>
-                            </svg>
-                            <span class="visually-hidden">
-                                switch to the Apple Pay payment service
-                            </span>
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a class="partners__link" href="#" target="_blank">
-                            <svg class="icon" width="60" height="60">
-                                <use href="./images/sprite.svg#npm"></use>
-                            </svg>
-                            <span class="visually-hidden">
-                                switch to npm js platform
-                            </span>
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a class="partners__link" href="#" target="_blank">
-                            <svg class="icon" width="60" height="60">
-                                <use href="./images/sprite.svg#ubereats"></use>
-                            </svg>
-                            <span class="visually-hidden">
-                                switch to a paid food delivery service
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__info">
-                    <a class="logo footer__logo" href="#">
-                        <img class="logo__img" width="140" height="25" src="./images/logo-footer.svg"
-                            alt="logo DolGuldur">
-                    </a>
-                    <address class="footer__contacts">
-                        <p class="footer__location">
-                            14 Green St., Belmont, Boston. USA
-                        </p>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a class="footer__link" href="mailto:info@dolguldur.com">
-                                    info@dolguldur.com
+                    <div class="mobile-menu" data-menu>
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item">
+                                <a class="mobile-menu__link current" href="index.html">
+                                    Home
                                 </a>
                             </li>
-                            <li class="footer__item">
-                                <a class="footer__link" href="tel:+380991111111">
-                                    +38 099 111 11 11
+                            <li class="mobile-menu__item">
+                                <a class="mobile-menu__link @@currentWorks" href="works.html">
+                                    Our Works
+                                </a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a class="mobile-menu__link" href="#">
+                                    Contacts
                                 </a>
                             </li>
                         </ul>
-                    </address>
+                        <ul class="mobile-menu__contact">
+                            <li class="mobile-menu__contact-item">
+                                <a class="mobile-menu__contact-link" href="tel:+380961111111">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="mobile-menu__contact-item">
+                                <a class="mobile-menu__contact-link" href="mailto:info@dolguldur.com">
+                                    info@dolguldur.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-social">
+                            <li class="mobile-social__item">
+                                <a class="mobile-social__link" href="#">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a class="mobile-social__link" href="#">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a class="mobile-social__link" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a class="mobile-social__link" href="#">
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="mailto:info@dolguldur.com">
+                            <svg class="icon" width="16" height="12">
+                                <use href="./images/sprite.svg#e-mail"></use>
+                            </svg>
+                            info@dolguldur.com
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="tel:+380961111111">
+                            <svg class="icon" width="10" height="16">
+                                <use href="./images/sprite.svg#phone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <h1 class="visually-hidden">
+                Website development by DolGuldur
+            </h1>
+            <section class="hero">
+                <div class="hero__slider">
+                    <div class="hero__slider-item hero__slider-item--face">
+                    </div>
+                    <div class="hero__slider-item hero__slider-item--writer">
+                    </div>
+                    <div class="hero__slider-item hero__slider-item--user">
+                    </div>
                 </div>
-                <div class="footer__content">
-                    <span class="footer__text">
-                        Join
-                    </span>
-                    <ul class="social">
-                        <li class="social__item">
-                            <a class="social__link social__link--dark" href="#" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg class="icon" width="20" height="20">
-                                    <use href="./images/sprite.svg#instagram"></use>
+                <div class="container">
+                    <div class="hero__content">
+                        <h2 class="hero__title">
+                            Author's forge where <br> your sites are created
+                        </h2>
+                        <button class="button" type="button" data-modal-open>
+                            Go to order
+                        </button>
+                    </div>
+                </div>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <form class="form">
+                            <h3 class="form__title">
+                                Tell about yourself and we will contact you
+                            </h3>
+                            <label class="form__label" for="name">
+                                Name
+                                <input class="form__input" type="text" name="name" id="name" required>
+                                <svg class="icon form__icon" width="12" height="12">
+                                    <use href="./images/sprite.svg#user"></use>
+                                </svg>
+                            </label>
+                            <label class="form__label" for="phone">
+                                Phone
+                                <input class="form__input" type="tel" name="number" id="phone" required>
+                                <svg class="icon form__icon" width="13" height="13">
+                                    <use href="./images/sprite.svg#telephone"></use>
+                                </svg>
+                            </label>
+                            <label class="form__label" for="email">
+                                E-mail
+                                <input class="form__input" type="email" name="e-mail" id="email" required>
+                                <svg class="icon form__icon" width="15" height="12">
+                                    <use href="./images/sprite.svg#email"></use>
+                                </svg>
+                            </label>
+                            <label class="form__label form__label-textarea" for="message">
+                                Message
+                                <textarea class="form__input form__input--big" name="message" id="message"
+                                    placeholder="Your message..." required></textarea>
+                            </label>
+                            <label class="form__label-checkbox" for="subscription">
+                                <input class="form__checkbox" type="checkbox" name="subscription" id="subscription"
+                                    required>
+                                <span class="form__checkbox-fake">
+                                    <svg class="icon" width="10" height="8">
+                                        <use href="./images/sprite.svg#checked"></use>
+                                    </svg>
+                                </span>
+                                <p class="form__checkbox-subscription">
+                                    I agree to the subscription and accept the <a class="form__subscription-link"
+                                        href="#" target="_blank">Terms
+                                        of use</a>
+                                </p>
+                            </label>
+                            <button class="button form__button" type="submit">
+                                Submit
+                            </button>
+                        </form>
+                        <button class="modal__close" type="button" data-modal-close>
+                            <svg class="icon" width="16" height="16">
+                                <use href="./images/sprite.svg#modal-close"></use>
+                            </svg>
+                            <span class="visually-hidden">
+                                close modal
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages section">
+                <div class="container">
+                    <h2 class="visually-hidden">
+                        Our advantages
+                    </h2>
+                    <ul class="advantages__inner">
+                        <li class="advantages__item">
+                            <div class="advantages__box">
+                                <svg class="advantages__icon" width="70" height="70">
+                                    <use href="./images/sprite.svg#advantages-hands"></use>
+                                </svg>
+                            </div>
+                            <h3 class="advantages__subtitle">
+                                Effective team
+                            </h3>
+                            <p class="advantages__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__box">
+                                <svg class="advantages__icon" width="70" height="70">
+                                    <use href="./images/sprite.svg#advantages-telephone"></use>
+                                </svg>
+                            </div>
+                            <h3 class="advantages__subtitle">
+                                Punctuality
+                            </h3>
+                            <p class="advantages__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__box">
+                                <svg class="advantages__icon" width="70" height="70">
+                                    <use href="./images/sprite.svg#advantages-person"></use>
+                                </svg>
+                            </div>
+                            <h3 class="advantages__subtitle">
+                                Planning
+                            </h3>
+                            <p class="advantages__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__box">
+                                <svg class="advantages__icon" width="70" height="70">
+                                    <use href="./images/sprite.svg#advantages-table"></use>
+                                </svg>
+                            </div>
+                            <h3 class="advantages__subtitle">
+                                Innovation
+                            </h3>
+                            <p class="advantages__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="services section">
+                <div class="container">
+                    <h2 class="title">
+                        Our services
+                    </h2>
+                    <ul class="services__list">
+                        <li class="services__item">
+                            <h3 class="services__title">
+                                Desktop apps
+                            </h3>
+                            <picture>
+                                <source srcset="./images/services/desktop.webp 1x, ./images/services/desktop-2x.webp 2x"
+                                    type="image/webp">
+                                <source srcset="./images/services/desktop.jpg 1x, ./images/services/desktop-2x.jpg 2x">
+                                <img class="services__img" src="./images/services/desktop.jpg"
+                                    alt="a desktop on which user devices lie" width="370" height="294">
+                            </picture>
+                        </li>
+                        <li class="services__item">
+                            <h3 class="services__title">
+                                Mobile apps
+                            </h3>
+                            <picture>
+                                <source srcset="./images/services/phone.webp 1x, ./images/services/phone-2x.webp 2x"
+                                    type="image/webp">
+                                <source srcset="./images/services/phone.jpg 1x, ./images/services/phone-2x.jpg 2x">
+                                <img class="services__img" src="./images/services/phone.jpg"
+                                    alt="user holding his mobile phone" width="370" height="294">
+                            </picture>
+                        </li>
+                        <li class="services__item">
+                            <h3 class="services__title">
+                                Modern design
+                            </h3>
+                            <picture>
+                                <source
+                                    srcset="./images/services/drafting.webp 1x, ./images/services/drafting-2x.webp 2x"
+                                    type="image/webp">
+                                <source
+                                    srcset="./images/services/drafting.jpg 1x, ./images/services/drafting-2x.jpg 2x">
+                                <img class="services__img" src="./images/services/drafting.jpg"
+                                    alt="A hand holds a colored pencil, a box of pencils is next to it" width="370"
+                                    height="294">
+                            </picture>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="team section">
+                <div class="container">
+                    <h2 class="title">
+                        Our team
+                    </h2>
+                    <ul class="team__list">
+                        <li class="team__item">
+                            <article class="team-card">
+                                <picture>
+                                    <source srcset="./images/team/Paul.webp 1x, ./images/team/Paul-2x.webp 2x"
+                                        type="image/webp" media="(min-width:1200px)">
+                                    <source srcset="./images/team/Paul.jpg 1x, ./images/team/Paul-2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source srcset="./images/team/Paul-tab.webp 1x, ./images/team/Paul-tab-2x.webp 2x"
+                                        type="image/webp" media="(min-width:768px)">
+                                    <source srcset="./images/team/Paul-tab.jpg 1x, ./images/team/Paul-tab-2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source srcset="./images/team/Paul-mob.webp 1x, ./images/team/Paul-mob-2x.webp 2x"
+                                        type="image/webp" media="(min-width:320px)">
+                                    <source srcset="./images/team/Paul-mob.jpg 1x, ./images/team/Paul-mob-2x.jpg 2x"
+                                        media="(min-width:320px)">
+                                    <img class="team-card__picture" src="./images/team/Paul.jpg" alt="Paul Castanie"
+                                        width="450" height="460">
+                                </picture>
+                                <div class="team-card__content">
+                                    <h3 class="team-card__name">
+                                        Paul Castanie
+                                    </h3>
+                                    <p class="team-card__profession">
+                                        Product Designer
+                                    </p>
+                                    <ul class="social">
+                                        <li class="social__item">
+                                            <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#instagram"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Paul Castanie's Instagram
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#twitter"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Paul Castanie's twitter
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#facebook"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Paul Castanie's facebook
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__link" href="#" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#linkedin"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Paul Castanie's linkedin
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="team__item">
+                            <article class="team-card">
+                                <picture>
+                                    <source srcset="./images/team/Joanna.webp 1x, ./images/team/Joanna-2x.webp 2x"
+                                        type="image/webp" media="(min-width:1200px)">
+                                    <source srcset="./images/team/Joanna.jpg 1x, ./images/team/Joanna-2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/team/Joanna-tab.webp 1x, ./images/team/Joanna-tab-2x.webp 2x"
+                                        type="image/webp" media="(min-width:768px)">
+                                    <source srcset="./images/team/Joanna-tab.jpg 1x, ./images/team/Joanna-tab-2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/team/Joanna-mob.webp 1x, ./images/team/Joanna-mob-2x.webp 2x"
+                                        type="image/webp" media="(min-width:320px)">
+                                    <source srcset="./images/team/Joanna-mob.jpg 1x, ./images/team/Joanna-mob-2x.jpg 2x"
+                                        media="(min-width:320px)">
+                                    <img class="team-card__picture" src="./images/team/Joanna.jpg" alt="Joanna Nix"
+                                        width="450" height="460">
+                                </picture>
+                                <div class="team-card__content">
+                                    <h3 class="team-card__name">
+                                        Joanna Nix
+                                    </h3>
+                                    <p class="team-card__profession">
+                                        Frontend Developer
+                                    </p>
+                                    <ul class="social">
+                                        <li class="social__item">
+                                            <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#instagram"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Joanna Nix's Instagram
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#twitter"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Joanna Nix's twitter
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#facebook"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Joanna Nix's facebook
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#linkedin"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Joanna Nix's linkedin
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="team__item">
+                            <article class="team-card">
+                                <picture>
+                                    <source srcset="./images/team/Aldo.webp 1x, ./images/team/Aldo-2x.webp 2x"
+                                        type="image/webp" media="(min-width:1200px)">
+                                    <source srcset="./images/team/Aldo.jpg 1x, ./images/team/Aldo-2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source srcset="./images/team/Aldo-tab.webp 1x, ./images/team/Aldo-tab-2x.webp 2x"
+                                        type="image/webp" media="(min-width:768px)">
+                                    <source srcset="./images/team/Aldo-tab.jpg 1x, ./images/team/Aldo-tab-2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source srcset="./images/team/Aldo-mob.webp 1x, ./images/team/Aldo-mob-2x.webp 2x"
+                                        type="image/webp" media="(min-width:320px)">
+                                    <source srcset="./images/team/Aldo-mob.jpg 1x, ./images/team/Aldo-mob-2x.jpg 2x"
+                                        media="(min-width:320px)">
+                                    <img class="team-card__picture" src="./images/team/Aldo.jpg" alt="Aldo Delara"
+                                        width="450" height="460">
+                                </picture>
+                                <div class="team-card__content">
+                                    <h3 class="team-card__name">
+                                        Aldo Delara
+                                    </h3>
+                                    <p class="team-card__profession">
+                                        Marketing
+                                    </p>
+                                    <ul class="social">
+                                        <li class="social__item">
+                                            <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#instagram"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Aldo Delara's Instagram
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#twitter"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Aldo Delara's twitter
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#facebook"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Aldo Delara's facebook
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#linkedin"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Aldo Delara's linkedin
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="team__item">
+                            <article class="team-card">
+                                <picture>
+                                    <source srcset="./images/team/Oladimeji.webp 1x, ./images/team/Oladimeji-2x.webp 2x"
+                                        type="image/webp" media="(min-width:1200px)">
+                                    <source srcset="./images/team/Oladimeji.jpg 1x, ./images/team/Oladimeji-2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/team/Oladimeji-tab.webp 1x, ./images/team/Oladimeji-tab-2x.webp 2x"
+                                        type="image/webp" media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/team/Oladimeji-tab.jpg 1x, ./images/team/Oladimeji-tab-2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/team/Oladimeji-mob.webp 1x, ./images/team/Oladimeji-mob-2x.webp 2x"
+                                        type="image/webp" media="(min-width:320px)">
+                                    <source
+                                        srcset="./images/team/Oladimeji-mob.jpg 1x, ./images/team/Oladimeji-mob-2x.jpg 2x"
+                                        media="(min-width:320px)">
+                                    <img class="team-card__picture" src="./images/team/Oladimeji.jpg"
+                                        alt="Oladimeji Odunsi" width="450" height="460">
+                                </picture>
+                                <div class="team-card__content">
+                                    <h3 class="team-card__name">
+                                        Oladimeji Odunsi
+                                    </h3>
+                                    <p class="team-card__profession">
+                                        UI Designer
+                                    </p>
+                                    <ul class="social">
+                                        <li class="social__item">
+                                            <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#instagram"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Oladimeji Odunsi's Instagram
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#twitter"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Oladimeji Odunsi's twitter
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#facebook"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Oladimeji Odunsi's facebook
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a href="#" class="social__link" target="_blank" rel="noopener noreferrer">
+                                                <svg class="icon icon--light" width="20" height="20">
+                                                    <use href="./images/sprite.svg#linkedin"></use>
+                                                </svg>
+                                                <span class="visually-hidden">
+                                                    Go to Oladimeji Odunsi's linkedin
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="partners section">
+                <div class="container">
+                    <h2 class="title">
+                        Our partners
+                    </h2>
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <a class="partners__link" href="#" target="_blank">
+                                <svg class="icon" width="60" height="60">
+                                    <use href="./images/sprite.svg#rails"></use>
                                 </svg>
                                 <span class="visually-hidden">
-                                    go to the Instagram of DolGuldur company
+                                    switch to the Rails web framework
                                 </span>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--dark" href="#" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg class="icon" width="20" height="20">
-                                    <use href="./images/sprite.svg#twitter"></use>
+                        <li class="partners__item">
+                            <a class="partners__link" href="#" target="_blank">
+                                <svg class="icon" width="60" height="60">
+                                    <use href="./images/sprite.svg#googlepay"></use>
                                 </svg>
                                 <span class="visually-hidden">
-                                    go to the Twitter of DolGuldur company
+                                    go to the Google Play platform
                                 </span>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--dark" href="#" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg class="icon" width="20" height="20">
-                                    <use href="./images/sprite.svg#facebook"></use>
+                        <li class="partners__item">
+                            <a class="partners__link" href="#" target="_blank">
+                                <svg class="icon" width="60" height="60">
+                                    <use href="./images/sprite.svg#playstation"></use>
                                 </svg>
                                 <span class="visually-hidden">
-                                    go to the Facebook of DolGuldur company
+                                    switch to the PlayStation game console brand
                                 </span>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--dark" href="#" target="_blank"
-                                rel="noopener noreferrer">
-                                <svg class="icon" width="20" height="20">
-                                    <use href="./images/sprite.svg#linkedin"></use>
+                        <li class="partners__item">
+                            <a class="partners__link" href="#" target="_blank">
+                                <svg class="icon" width="60" height="60">
+                                    <use href="./images/sprite.svg#applepay"></use>
                                 </svg>
                                 <span class="visually-hidden">
-                                    go to the Linkedin of DolGuldur company
+                                    switch to the Apple Pay payment service
+                                </span>
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a class="partners__link" href="#" target="_blank">
+                                <svg class="icon" width="60" height="60">
+                                    <use href="./images/sprite.svg#npm"></use>
+                                </svg>
+                                <span class="visually-hidden">
+                                    switch to npm js platform
+                                </span>
+                            </a>
+                        </li>
+                        <li class="partners__item">
+                            <a class="partners__link" href="#" target="_blank">
+                                <svg class="icon" width="60" height="60">
+                                    <use href="./images/sprite.svg#ubereats"></use>
+                                </svg>
+                                <span class="visually-hidden">
+                                    switch to a paid food delivery service
                                 </span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="footer__subscribe">
-                    <span class="footer__text">
-                        Subscribe
-                    </span>
-                    <form class="footer__form">
-                        <label class="footer__label" for="subscribe">
-                            <span class="visually-hidden">
-                                write your e-mail
-                            </span>
-                            <input class="footer__input" type="email" name="e-mail" id="subscribe" placeholder="E-mail"
-                                required>
-                        </label>
-                        <button class="button footer__button" type="submit">
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__info">
+                        <a class="logo footer__logo" href="#">
+                            <img class="logo__img" width="140" height="25" src="./images/logo-footer.svg"
+                                alt="logo DolGuldur">
+                        </a>
+                        <address class="footer__contacts">
+                            <p class="footer__location">
+                                14 Green St., Belmont, Boston. USA
+                            </p>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link" href="mailto:info@dolguldur.com">
+                                        info@dolguldur.com
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link" href="tel:+380991111111">
+                                        +38 099 111 11 11
+                                    </a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="footer__content">
+                        <span class="footer__text">
+                            Join
+                        </span>
+                        <ul class="social">
+                            <li class="social__item">
+                                <a class="social__link social__link--dark" href="#" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg class="icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#instagram"></use>
+                                    </svg>
+                                    <span class="visually-hidden">
+                                        go to the Instagram of DolGuldur company
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--dark" href="#" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg class="icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                    <span class="visually-hidden">
+                                        go to the Twitter of DolGuldur company
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--dark" href="#" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg class="icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                    <span class="visually-hidden">
+                                        go to the Facebook of DolGuldur company
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--dark" href="#" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg class="icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#linkedin"></use>
+                                    </svg>
+                                    <span class="visually-hidden">
+                                        go to the Linkedin of DolGuldur company
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__subscribe">
+                        <span class="footer__text">
                             Subscribe
-                            <svg class="icon" width="24" height="24">
-                                <use href="./images/sprite.svg#flower"></use>
-                            </svg>
-                        </button>
-                    </form>
+                        </span>
+                        <form class="footer__form">
+                            <label class="footer__label" for="subscribe">
+                                <span class="visually-hidden">
+                                    write your e-mail
+                                </span>
+                                <input class="footer__input" type="email" name="e-mail" id="subscribe"
+                                    placeholder="E-mail" required>
+                            </label>
+                            <button class="button footer__button" type="submit">
+                                Subscribe
+                                <svg class="icon" width="24" height="24">
+                                    <use href="./images/sprite.svg#flower"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <script src="js/main.min.js"></script>
 </body>
 

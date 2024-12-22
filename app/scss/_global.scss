@@ -1,3 +1,8 @@
+html,
+body {
+    height: 100%;
+}
+
 body {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
@@ -7,6 +12,16 @@ body {
     background-color: $light;
     font-style: normal;
     color: $dark-500;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
 }
 
 .container {
