@@ -18,7 +18,7 @@ $(document).ready(function () {
         menuBtnRef.classList.toggle("is-open");
         menuBtnRef.setAttribute("aria-expanded", !expanded);
         mobileMenuRef.classList.toggle("is-open");
-    })
+    });
 
     const header = document.querySelector('[data-header]');
     window.addEventListener('scroll', function () {
@@ -51,7 +51,7 @@ $(document).ready(function () {
 
     buttonModalClose.addEventListener('click', function () {
         body.classList.remove('no-scroll')
-    })
+    });
 
     const refs = {
         openModalBtn: document.querySelector("[data-modal-open]"),
@@ -64,7 +64,6 @@ $(document).ready(function () {
         refs.modal.classList.toggle("is-hidden");
     }
 })();
-
 
 
 

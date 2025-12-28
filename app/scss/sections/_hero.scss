@@ -127,31 +127,31 @@
     }
 
     &__slider-item--user {
-        background-image: url('../images/slider/сomputer-user-mob.jpg');
+        background-image: url('../images/slider/user-mob.jpg');
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('../images/slider/сomputer-user-mob-2x.jpg');
+            background-image: url('../images/slider/user-mob-2x.jpg');
         }
 
         @media (min-width: 768px) {
-            background-image: url('../images/slider/сomputer-user-tab.jpg');
+            background-image: url('../images/slider/user-tab.jpg');
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url('../images/slider/сomputer-user-tab-2x.jpg');
+                background-image: url('../images/slider/user-tab-2x.jpg');
             }
         }
 
         @media (min-width: 1200px) {
-            background-image: url('../images/slider/сomputer-user.jpg');
+            background-image: url('../images/slider/user.jpg');
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url('../images/slider/сomputer-user-2x.jpg');
+                background-image: url('../images/slider/user-2x.jpg');
             }
         }
     }
